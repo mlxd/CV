@@ -1,45 +1,33 @@
 \documentclass[10pt,a4paper,unicode]{moderncv}
 
-% moderncv themes
-\moderncvtheme[grey]{casual}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-%\moderncvtheme[green]{classic}                % idem
+\moderncvtheme[grey]{casual} 
+%\moderncvtheme[green]{classic}%idem
 
-% character encoding
-\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[utf8]{inputenc} 
 
-% adjust the page margins
 \usepackage[scale=0.85]{geometry}
-\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3cm}			% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
-% Hyperlinks
-\usepackage{lipsum}	
-%\usepackage{hyperref}								% to use hyperlinks
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}			% hyperlinks setup
-%\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
-% personal data
 \firstname{Lee James}
 \familyname{O'Riordan}
-\title{BSc(Hons)}               % optional, remove the line if not wanted
+\title{BSc(Hons)} 
 %\address{Quantum Systems Unit, Okinawa Institute of Science and Technology Graduate University}{1919-1 Tancha, Onna-son, Okinawa, Japan 904-0495}   % optional, remove the line if not wanted
 \mobile{+81 (0)80 6498 4323}                   
 \phone{+81 (0)98 966 1588}                                   
 \email{lee.oriordan@oist.jp / loriordan@gmail.com}
 \homepage{http://www.linkedin.com/in/loriordan}
+\social[github]{https://github.com/mlxd} 
 \extrainfo{\href{http://groups.oist.jp/qsu}{http://groups.oist.jp/qsu}  $\bullet$  \href{http://github.com/mlxd}{http://github.com/mlxd}  $\bullet$  \href{http://bitbucket.org/loriordan}{http://bitbucket.org/loriordan}} 
-%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
-%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
 
-% to show numerical labels in the bibliography; only useful if you make citations in your resume
 \makeatletter
 \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 \makeatother
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 %----------------------------------------------------------------------------------
@@ -66,7 +54,7 @@ Trained in operation of semiconductor wafer analysis and die failure analysis.\n
 Developed software for die yield analysis and characterisation.\newline{}
 Routine experience in use of SEM and FIB equipment (FEI Helios DualBeam).}
 %\cventry{2008}{Computer repair technician}{Computer Centre}{Clonmel, Ireland}{}{Routine analysis and repair of computer hardware \& software issues.}
-\cventry{2006--2008}{Session musician \& instructor}{\textit{Teaching \& performing}}{Various locations}{Ireland}{Guitarist \& music instructor.}
+%\cventry{2006--2008}{Session musician \& instructor}{\textit{Teaching \& performing}}{Various locations}{Ireland}{Guitarist \& music instructor.}
 %\cventry{2005}{Sales assistant}{Dunnes Stores}{Clonmel, Ireland}{}{General assistant with store upkeep and operations.}
 
 %\section{Bachelor thesis}
@@ -87,13 +75,12 @@ Representing the students requests and opinions and conveying them to the admini
 Created and delivered as part of a team Scratch programming language tutorial for children aged 8-16.}{}
 
 \section{Fields of research}
-\cvline{}{Cold atomic systems, coherent atomic transport, dynamics of vortices in Bose-Einstein condensates, quantum chaos and turbulence, high performance computing, computational-accelerator enabled physics simulations.}
+\cvline{}{Cold atomic systems, coherent atomic transport, quantum vortices in Bose-Einstein condensates, quantum chaos and turbulence, high performance computing, computational-accelerator enabled physics simulations.}
 
 \section{Publications}
 \cvline{2013}{\textit{``Coherent transport by adiabatic passage on atom chips'', }{T.~Morgan, L.~J.~O'Riordan, N.~Crowley, Th.~Busch,} \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys. Rev. A 88, 053618}. DOI: {10.1103/PhysRevA.88.053618}}
 \cvline{2016}{\textit{``Moir\'e superlattice structures in kicked Bose-Einstein condensates'', }{L.~J.~O'Riordan, A.~C.~White, Th.~Busch.} \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys. Rev. A 93, 023609}. DOI: {10.1103/PhysRevA.93.023609}}
 	
-  
 \section{Conferences \& workshops}
 \cventry{Mar, 2016}{WQS 2016} {Conference}{Dunedin}{New Zealand}{Poster presentation: ``\textit{Dynamics of large vortex lattice carrying Bose--Einstein condensates}"}
 \cventry{June, 2015}{ICOLS 2015} {Conference}{Sentosa}{Singapore}{Poster presentation: ``\textit{Moiré super-lattice in a kicked rapidly rotating Bose–Einstein condensate}"}
@@ -117,28 +104,18 @@ Created and delivered as part of a team Scratch programming language tutorial fo
 %\cventry{}{Continuum Mechanics (Fluids)}{Prof. P. Chakraborty}{Okinawa Institute of Science and Technology Graduate University}{Japan}{}
 %\cventry{2012}{Phase Space Methods for Quantum Atom Optics}{Prof. B. Dalton}{University College Cork}{Ireland}{}  
  
-%\section{Publications}
-%\cventry{Pre-publication}{Coherent transport by adiabatic passage on atomchips}{T. Morgan, L.~J. O'Riordan, N. Crowley, Th. Busch}{}{}{}
-
-
-
-\section{Professional memberships}
-\cventry{2015-}{Student member} {Optical Society of America}{\href{http://www.osa.org}{http://www.osa.org}}{}{}{}
-\cventry{2012-}{Associate member}{Institute of Physics}{\href{http://www.iop.org/}{http://www.iop.org/}}{}{}{}
-\cventry{2012-}{Student member}{Deutsche Physikalische Gesellschaft}{\href{https://www.dpg-physik.de}{https://www.dpg-physik.de}}{}{}{}
-
 \section{Competitions \& awards}
 \cventry{2014}{Best Customer Interaction}{Kyued-Up Innovation Event}{Okinawa Institute of Science and Technology Graduate University, Japan}{Project title: ``Okinawa Science Discovery Center''}{\href{http://pullapproach.com}{http://pullapproach.com}}{}
 \cventry{2013}{2nd place}{Euraxess Links Japan, Science Slam 2013}{Tokyo Institute of Technology}{Japan}{Talk title: ``Quantum Typhoons''}{}
 \cventry{2010}{Student of the Year}{School of Science, Waterford Institute of Technology}{Ireland}{}{}
 \cventry{2010}{Best undergraduate project}{Department of Computing, Maths and Physics, Waterford Institute of Technology}{Ireland}{}{}
-\cventry{2010}{Earnshaw Medal Nominee}{Institute of Physics}{Ireland}{}{}
-\cventry{2007}{3rd place}{Robocode: Inter-varsity AI programming competition}{Ireland}{}{}
+%\cventry{2010}{Earnshaw Medal Nominee}{Institute of Physics}{Ireland}{}{}
+%\cventry{2007}{3rd place}{Robocode: Inter-varsity AI programming competition}{Ireland}{}{}
 
 \section{Other projects}
 \cvline{CUDA,C/C++\\Python,Matlab}{GPUE: Bose-Einstein condensation simulation suite on GPU. Available at GPUE - \href{http://github.com/mlxd/gpue}{http://github.com/mlxd/gpue} and \href{http://bitbucket.org/loriordan/gpue}{http://bitbucket.org/loriordan/gpue}}
 \cvline{C/C++}{Design of embedded power controller for minimization of wasted power in university computer systems; Microsoft Imagine Cup Semifinalist, 2009.}
-\cvline{Misc}{Organisation and development of a framework for business ``ideation'' from research within Okinawan universities.}
+%\cvline{Misc}{Organisation and development of a framework for business ``ideation'' from research within Okinawan universities.}
 
 \section{Natural languages}
 \cvlanguage{English}{Native}{}
@@ -146,11 +123,11 @@ Created and delivered as part of a team Scratch programming language tutorial fo
 \cvlanguage{Japanese}{Basic}{}
 
 \section{Computer languages \& skills}
-\cvline{Basic}{\small UML, HTML, Tcl, Objective C, C\#, Silvaco, Frealign, MultiSim, LabView, IMOD, CuDNN, Caffe, DIGITS.}
-\cvline{Intermediate}{\small OpenCL, Python, Java, MPI, OpenMP, Mathematica, Maple, Bash, {\LaTeX}, Julia.}
+\cvline{Basic}{\small HTML, C\#, Visual Basic, MPI}
+\cvline{Intermediate}{\small OpenCL, Python, Java, OpenMP, Mathematica, Maple, Bash/Zsh, {\LaTeX}, Julia.}
 \cvline{Expert}{\small C/C++, CUDA, Matlab.}
 \cvline{}{}
-\cvline{Tools}{\small GCC, GDB, CuFFT, CuDNN, Caffe, Nvidia DIGITS, GPGPU, Eclipse, Nvidia Visual Profiler, Nvidia Nsight, GNU Scientific Library, Raspberry Pi.}
+\cvline{Tools}{\small GCC, GDB, CuFFT, GPGPU, Nvidia Visual Profiler, Nvidia Nsight, GNU Scientific Library, Raspberry Pi.}
 \cvline{OS \& Applications}{\small Windows, Linux/Unix, OS X, Office, iWork, LibreOffice/OpenOffice, GIMP, EndNote, OneNote.}
 
 \begin{center}
@@ -163,10 +140,12 @@ Created and delivered as part of a team Scratch programming language tutorial fo
 %\date{\today} % Letter date
 %\opening{Dear Sir or Madam,} % Opening greeting
 %\closing{Sincerely,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae}
 %
-%\makelettertitle % Print letter title
+%\makelettertitle
 %
-%{The topics covered on this year's programme are very relevant to my areas of study as part of my PhD thesis.
+%{I am enquiring about the advertised position ``'' you have advterised on LinkedIn.
+%The topics covered on this year's programme are very relevant to my areas of study as part of my PhD thesis.
 %During my first year of PhD studies at University College Cork (UCC) under Thomas Busch I have worked on coherent atomic control using atom-chip structures.
 %Employing the matter-wave analogue of STIRAP, coherent tunneling via adiabatic passage (CTAP) as outlined by Eckert et al (doi:10.1016/j.optcom.2006.02.056), and extending the work carried out by 
 %O'Sullivan et al. (doi:10.1088/0031-8949/2010/T140/014029) on 2D trapping potentials, a fully experimentally realisable 3D system was devised.  Simulations of our proposed system showed verification of the CTAP process, wherein we were able to show transfer fidelities of 99.8\% for counter-intuitive waveguide arrangements, and verification of the difficulties with direct tunneling via intuitive arrangements.
@@ -180,6 +159,6 @@ Created and delivered as part of a team Scratch programming language tutorial fo
 %who wish to perform simulations of complex physical systems in reasonable timescales. Lastly, this school would also offer the ability for me to build my academic network with the possibility of developing future collaborative efforts with other such attendees. It is for these reasons that I wish to attend this summer school.
 %}
 %
+I look forward to discussing my qualifications, and can be reached at \href{loriordan@gmail.com}{\textcolor{blue}{loriordan@gmail.com}}.
 %\makeletterclosing % Print letter signature
-
 \end{document}
