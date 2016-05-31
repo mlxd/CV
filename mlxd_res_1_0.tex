@@ -1,47 +1,33 @@
 \documentclass[10pt,a4paper,unicode]{moderncv}
 
-% moderncv themes
-%\moderncvtheme[grey]{casual}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[grey]{casual}                % oldstyle banking casual classic
+\moderncvtheme[grey]{banking}                % oldstyle banking casual classic
 
-% character encoding
-\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[utf8]{inputenc}
 
-% adjust the page margins
 \usepackage[scale=0.85]{geometry}
-\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
-%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
-%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+\setlength{\hintscolumnwidth}{3cm}
 
-% Hyperlinks
-\usepackage{lipsum}	
-%\usepackage{hyperref}								% to use hyperlinks
+\usepackage{hyperref}								% to use hyperlinks
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}			% hyperlinks setup
-%\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
-% personal data
 \firstname{Lee James}
 \familyname{O'Riordan}
-\title{BSc(Hons), AMInstP}               % optional, remove the line if not wanted
-\address{Quantum Systems Unit, Okinawa Institute of Science and Technology Graduate University}{1919-1 Tancha, Onna-son, Okinawa, Japan 904-0495}   % optional, remove the line if not wanted
-\mobile{+81 (0)80 6498 4323}                   
-\phone{+81 (0)98 966 1588}                                   
+%\title{BSc(Hons), AMInstP}               % optional, remove the line if not wanted
+%\address{Quantum Systems Unit, Okinawa Institute of Science and Technology Graduate University}{1919-1 Tancha, Onna-son, Okinawa, Japan 904-0495}   % optional, remove the line if not wanted
+\mobile{+81 (0)80 6498 4323}
+\phone{+81 (0)98 966 1588}
 \email{lee.oriordan@oist.jp}
 \homepage{http://www.linkedin.com/in/loriordan}
-\extrainfo{\href{http://groups.oist.jp/qsu}{http://groups.oist.jp/qsu}} 
-%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
-%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+\social[github]{https://github.com/mlxd}
+\extrainfo{\href{http://groups.oist.jp/qsu}{http://groups.oist.jp/qsu}}
 
-% to show numerical labels in the bibliography; only useful if you make citations in your resume
 \makeatletter
 \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 \makeatother
 
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
+%\nopagenumbers{}
 
-\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -50,61 +36,52 @@
 \vspace*{-30pt}
 \section{Education}
 \cventry{2012--Present}{PhD in Science (Physics)}{Quantum Systems Unit, Okinawa Institute of Science and Technology Graduate University}{Japan}{}{}
-\cventry{2011--2012}{PhD in Physics}{Ultracold Quantum Gases group, University College Cork}{Ireland}{}{Transferred to Okinawa Institute of Science and Technology Graduate University, Japan after completing 1st academic year.}
-\cventry{2006--2010}{BSc (Hons) in Physics with Computing}{Waterford Institute of Technology}{Ireland}{First class honours}{}%Thesis: \emph{``Evaluating magnetic susceptibility in Heisenberg chains using OpenCL implementations of Monte Carlo methods''}.}
-%\cventry{2000--2005}{Leaving Certificate}{Ardscoil na mBraithre Clonmel}{Ireland}{}{}
+\cventry{2011--2012}{PhD in Physics}{Ultracold Quantum Gases group, University College Cork}{Ireland}{}{Transferred to Okinawa Institute of Science and Technology Graduate University, Japan.}
+\cventry{2006--2010}{BSc (Hons) in Physics with Computing}{Waterford Institute of Technology}{Ireland}{First class honours}{}
 
 \section{Experience}
-\cventry{2013}{MATLAB instructor}{\textit{Teaching}}{Okinawa Institute of Science and Technology Graduate University}{Japan}{}
-\cventry{2011--2012}{Laboratory teaching assistant}{\textit{Teaching}}{University College Cork}{Cork, Ireland}{}
-\cventry{2010--2011}{Software developer}{\textit{Work}}{IBM Ireland}{Dublin, Ireland}{}
-\cventry{2009}{Product Engineer (intern)}{\textit{Work}}{Analog Devices BV}{Limerick, Ireland}{}
-%\cventry{2008}{Computer repair technician}{Computer Centre}{Clonmel, Ireland}{}{Routine analysis and repair of computer hardware \& software issues.}
-%\cventry{2006--2008}{Session musician}{\textit{Teaching}}{Various locations}{Ireland}{Guitarist \& music instructor.}
-%\cventry{2005}{Sales assistant}{Dunnes Stores}{Clonmel, Ireland}{}{General assistant with store upkeep and operations.}
-
-%\section{Bachelor thesis}
-%\cvline{Title}{\emph{Evaluating magnetic susceptibility in Heisenberg chains using OpenCL implementations of Monte Carlo methods}}
-%\cvline{Supervisors}{Dr. Kieran Murphy}
-%\cvline{Description}{\small Computational project using graphics processors for accelerated evaluation; Provided means for calculating values of susceptibility given a specific chain length of atoms subject to applied fields; implementation used Monte Carlo integration methods programmed in OpenCL \& C; Results
-%showed excellent agreement with zero-field analytical case, much higher performance than other implementations for numerical evaluation with applied field.} 
-
-\section{University service}
-\cventry{2015-2016}{Chair}{OIST Student Council, OIST Student Assembly}{}{}{}{}
-\cventry{2014-}{Representative}{Quantum Systems Unit}{Scientific Computing Section Advanced Users Group}{}{}{}
-\cventry{2013-}{President}{OIST Music Club}{}{}{}{}
-\cventry{2013-}{Student member}{ITSSC committee, OIST.}{}{}{}{}
-\cventry{2013-}{Public outreach lectures}{OIST}{}{}{}{}
-
-\section{Competitions \& awards}
-\cventry{2013}{2nd place}{Euraxess Links Japan, Science Slam 2013}{Tokyo Institute of Technology}{Japan}{Talk title: ``Quantum Typhoons''}{}
-\cventry{2010}{Student of the Year}{School of Science, Waterford Institute of Technology}{Ireland}{}{}
-\cventry{2010}{Best undergraduate project}{Department of Computing, Maths and Physics, Waterford Institute of Technology}{Ireland}{}{}
-\cventry{2010}{Earnshaw Medal Nominee}{Institute of Physics}{Ireland}{}{}
-\cventry{2007}{3rd place}{Robocode: Inter-varsity AI programming competition}{Ireland}{}{}
-
-\section{Other projects}
-\cvline{CUDA,C/C++\\Python,Matlab}{GPUE: Bose-Einstein condensation simulation suite on GPU.\\ Available at \href{http://bitbucket.org/loriordan/gpue}{GPUE - http://bitbucket.org/loriordan/gpue}.}
-\cvline{C/C++}{Design of embedded power controller for minimization of wasted power in university computer systems; Microsoft Imagine Cup Semifinalist, 2009.}
-\cvline{Misc}{Organisation and development of a framework for business ``ideation'' from research within Okinawan universities.}
-
-\section{Computer language \& tools experience}
-\cvline{Basic}{\small UML, HTML, Tcl, Objective C, C\#, Silvaco, Frealign, MultiSim, LabView, IMOD, CuDNN, DIGITS, Caffe.}
-\cvline{Intermediate}{\small OpenCL, Python, Java, MPI, OpenMP, Mathematica, Maple, Bash, {\LaTeX}.}
-\cvline{Expert}{\small C/C++, CUDA, Matlab}
-\cvline{}{}
-%\cvline{Tools}{\small GCC, GDB, CuFFT, GPU, Eclipse, Nvidia Visual Profiler, Nvidia Nsight, GNU Scientific Library.}
-%\cvline{OS \& Applications}{\small Windows, Linux/Unix, OS X, Office, iWork, LibreOffice/OpenOffice, GIMP, EndNote, OneNote.}
-
-\section{Fields of research}
-\cvline{}{Cold atomic systems, coherent atomic transport, dynamics of vortices in Bose-Einstein condensates, quantum chaos and turbulence, high performance computing, computational-accelerator enabled simulations.}
+\cventry{2013--2015}{MATLAB instructor}{\textit{Teaching}}{Okinawa Institute of Science and Technology Graduate University, Japan}{}{Created and delivered a two day crash course in MATLAB programming as part of a team.}
+\cventry{2011--2012}{Laboratory teaching assistant}{\textit{Teaching}}{University College Cork, Ireland}{}{Organised, guided and demonstrated undergraduate laboratory sessions in physics experiments.}
+\cventry{2010--2011}{Software engineer}{\textit{Working}}{IBM, Ireland}{}{Development of server-side applications for use with WebSphere Portal platform. Experience using Java, J2EE, XML, XSLT, Ant, Shell scripting, JDBC, Python, C.}
+\cventry{2009}{Product engineer (intern)}{\textit{Working}}{Analog Devices BV, Ireland}{}{Semiconductor device yield improvement team. Hardware and software analysis and development.}
 
 \section{Publications}
-\cvline{2013}{\textit{``Coherent transport by adiabatic passage on atom chips.''} \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys. Rev. A 88, 053618}. \newline{} DOI: {10.1103/PhysRevA.88.053618}}
-  
-\section{Conferences \& workshops}
-\cventry{Sept, 2014}{Coherent Quantum Dynamics} {Workshop}{Okinawa Institute of Science and Technology Graduate University}{Japan}{Poster presentation: ``\textit{Investigating vortex dynamics in harmonically trapped Bose-Einstein condensates}"}
-\cventry{Sept, 2014}{Coherent Quantum Dynamics} {Workshop}{Okinawa Institute of Science and Technology Graduate University}{Japan}{Poster presentation: ``\textit{Investigating vortex dynamics in harmonically trapped Bose-Einstein condensates}"}
+\cvline{2013}{\textit{``Coherent transport by adiabatic passage on atom chips'', }{T.~Morgan, L.~J.~O'Riordan, N.~Crowley, Th.~Busch,} \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys. Rev. A 88, 053618}. DOI: {10.1103/PhysRevA.88.053618}}
+\cvline{2016}{\textit{``Moir\'e superlattice structures in kicked Bose-Einstein condensates'', }{L.~J.~O'Riordan, A.~C.~White, Th.~Busch.} \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys. Rev. A 93, 023609}. DOI: {10.1103/PhysRevA.93.023609}}
+
+\iffalse
+\section{University service}
+\cventry{2015-2016}{Chair}{OIST Student Council, OIST Student Assembly}{}{}{}{}
+%\cventry{2014-}{Representative}{Quantum Systems Unit}{Scientific Computing Section Advanced Users Group}{}{}{}
+\cventry{2013-}{President}{OIST Music Club}{}{}{}{}
+%\cventry{2013-}{Student member}{ITSSC committee, OIST.}{}{}{}{}
+\cventry{2013-}{Public outreach lectures}{OIST}{}{}{}{}
+\fi
+
+\section{Competitions \& awards}
+\cventry{2013}{2nd place}{Euraxess Links Japan, Science Slam 2013}{Tokyo Institute of Technology, Japan}{}{Talk title: ``Quantum Typhoons''}{}
+\cventry{2010}{Student of the Year}{School of Science}{Waterford Institute of Technology, Ireland}{}{}{}
+\cventry{2010}{Best undergraduate project}{Department of Computing, Maths and Physics}{Waterford Institute of Technology, Ireland}{}{}{}
+%\cventry{2010}{Earnshaw Medal Nominee}{Institute of Physics}{Ireland}{}{}
+%\cventry{2007}{3rd place}{Robocode: Inter-varsity AI programming competition}{Ireland}{}{}
+
+\section{Computer language proficiencies \& skills}
+\cvline{Basic}{\small HTML, C\#, Visual Basic, MPI}
+\cvline{Intermediate}{\small OpenCL, Python, Java, OpenMP, Mathematica, Maple, Bash/Zsh, {\LaTeX}, Julia.}
+\cvline{Expert}{\small C/C++, CUDA, Matlab.}
+\cvline{}{}
+\cvline{Tools}{\small GCC, GDB, CuFFT, GPGPU, Nvidia Visual Profiler, Nvidia Nsight, GNU Scientific Library, Raspberry Pi.}
+\cvline{OS \& Applications}{\small Windows, Linux/Unix, OS X, Office (Excel, Word, Powerpoint), iWork (Numbers, Pages, Keynote), LibreOffice/OpenOffice, GIMP, EndNote, OneNote.}
+
+\section{Other projects}
+\cvline{CUDA,C/C++\\Python,Matlab}{Architect \& developer of GPUE: Bose-Einstein condensation simulation suite on GPU. Available at GPUE - \href{http://github.com/mlxd/gpue}{http://github.com/mlxd/gpue}.}
+\cvline{Multiple languages}{Various projects for improving coding skills in computational sciences, available at\newline{} \href{http://github.com/mlxd}{http://github.com/mlxd}.}
+%\cvline{Misc}{Organisation and development of a framework for business ``ideation'' from research within Okinawan universities.}
+
+\iffalse
+\section{Presentations}
+\cventry{Mar, 2016}{WQS 2016} {Conference}{Dunedin}{New Zealand}{Poster presentation: ``\textit{Dynamics of large vortex lattice carrying Bose--Einstein condensates}"}
+\cventry{June, 2015}{ICOLS 2015} {Conference}{Sentosa}{Singapore}{Poster presentation: ``\textit{Moiré super-lattice in a kicked rapidly rotating Bose–Einstein condensate}"}
 \cventry{Sept, 2014}{Coherent Quantum Dynamics} {Workshop}{Okinawa Institute of Science and Technology Graduate University}{Japan}{Poster presentation: ``\textit{Investigating vortex dynamics in harmonically trapped Bose-Einstein condensates}"}
 \cventry{July, 2014}{Non-linear Dynamics, Dynamical Transitions and Instabilities in Classical and Quantum Systems}{Workshop}{ICTP}{Italy}{Poster presentation: ``\textit{Investigating vortex dynamics in harmonically trapped Bose-Einstein condensates}"}
 \cventry{April, 2014}{C3QS 2014}{Conference}{Okinawa Institute of Science and Technology Graduate University}{Japan}{Poster presentation: ``\textit{Coherent transport by adiabatic passage on atom chips}"}
@@ -114,38 +91,25 @@
 \cventry{Jul, 2012}{QUACS 2012}{Workshop}{University of Nottingham}{UK}{Poster presentation: ``\textit{Simulations of 3D atomic dynamics using a GPU accelerated split-operator method}"}
 \cventry{Mar, 2012}{Institute of Physics Ireland Spring Meeting 2012}{Workshop}{Royal College of Surgeons}{Ireland}{Poster presentation: ``\textit{Simulations of 3D atomic dynamics using a GPU accelerated split-operator method}"}
 \cventry{Mar, 2012}{DPG Spring Meeting}{University of Stuttgart}{Germany}{Conference}{Oral presentation: ``\textit{Simulations of 3D atomic dynamics using a GPU accelerated split-operator method}"}
-  
-%\section{Graduate courses}
-%\cventry{2014}{Coherent Quantum Dynamics}{Multiple lecturers}{Okinawa Institute of Science and Technology Graduate University}{Japan}{}
-%\cventry{}{School on Non-linear Dynamics, Dynamical Transitions and Instabilities in Classical and Quantum Systems}{Multiple lecturers}{ICTP}{Italy}{}
-%\cventry{2013}{Cold-Atoms PreDoc School: Manipulation of degenerate quantum gases}{Multiple lecturers}{\'{E}cole Pr\'{e}doctorale de Physique des Houches}{France}{}
-%\cventry{}{Advanced Optics}{Prof. S. NicCormaic}{Okinawa Institute of Science and Technology Graduate University}{Japan}{}
-%\cventry{}{Structural Biology}{Prof. U. Skoglund, Prof. F. Samatey}{Okinawa Institute of Science and Technology Graduate University}{Japan}{}
-%\cventry{}{Classical Electrodynamics}{Prof. T. Shintake}{Okinawa Institute of Science and Technology Graduate University}{Japan}{}
-%\cventry{}{Continuum Mechanics (Fluids)}{Prof. P. Chakraborty}{Okinawa Institute of Science and Technology Graduate University}{Japan}{}
-%\cventry{2012}{Phase Space Methods for Quantum Atom Optics}{Prof. B. Dalton}{University College Cork}{Ireland}{}  
- 
-%\section{Publications}
-%\cventry{Pre-publication}{Coherent transport by adiabatic passage on atomchips}{T. Morgan, L.~J. O'Riordan, N. Crowley, Th. Busch}{}{}{}
-
-
-\section{Professional memberships}
-\cventry{2015-}{Student member} {Optical Society of America}{}{}{}{}
-\cventry{2012-}{Associate member}{Institute of Physics}{}{}{}{}
-\cventry{2012-}{Student member}{Deutsche Physikalische Gesellschaft}{}{}{}{}
-
+\fi
 
 \section{Natural languages}
 \cvlanguage{English}{Native}{}
 \cvlanguage{Irish}{Intermediate}{}
 \cvlanguage{Japanese}{Basic}{}
 
+\iffalse
+\section{Competitions \& awards}
+\cventry{2014}{Best Customer Interaction}{Kyued-Up Innovation Event}{Okinawa Institute of Science and Technology Graduate University, Japan}{Project title: ``Okinawa Science Discovery Center''}{\href{http://pullapproach.com}{http://pullapproach.com}}{}
+\cventry{2013}{2nd place}{Euraxess Links Japan, Science Slam 2013}{Tokyo Institute of Technology}{Japan}{Talk title: ``Quantum Typhoons''}{}
+\cventry{2010}{Student of the Year}{School of Science, Waterford Institute of Technology}{Ireland}{}{}
+\cventry{2010}{Best undergraduate project}{Department of Computing, Maths and Physics, Waterford Institute of Technology}{Ireland}{}{}
+\fi
 
 %\section{Referees}
 %\cvline{PhD Supervisor}{Prof. Thomas Busch, Okinawa Institute of Science and Technology, Okinawa, Japan. \newline{} tel: +81 (0)98 966 1588 \hspace*{10pt} e-mail:\href{thomas.busch@oist.jp}{thomas.busch@oist.jp}}
 %\cvline{PhD academic mentor}{Prof. Nic Shannon, Okinawa Institute of Science and Technology, Okinawa, Japan. \newline{} \hspace*{10pt} e-mail:\href{nic.shannon@oist.jp}{nic.shannon@oist.jp}}
-%\cvline{Bachelor degree course leader}{Dr. Claire Keary, Waterford Institute of Technology, Waterford, Ireland \newline{} tel: +353 (0)51 834087 \hspace*{10pt} e-mail:\href{ckeary@wit.ie}{ckeary@wit.ie}}
-%\cvline{Bachelor degree thesis supervisor}{Dr. Kieran Murphy, Waterford Institute of Technology, Waterford, Ireland \newline{} e-mail:\href{kmurphy.wit@gmail.com}{kmurphy.wit@gmail.com}}
+
 \vspace{1ex}
 \begin{center}
 \textbf{Please contact me for references.}
@@ -162,13 +126,13 @@
 %
 %{The topics covered on this year's programme are very relevant to my areas of study as part of my PhD thesis.
 %During my first year of PhD studies at University College Cork (UCC) under Thomas Busch I have worked on coherent atomic control using atom-chip structures.
-%Employing the matter-wave analogue of STIRAP, coherent tunneling via adiabatic passage (CTAP) as outlined by Eckert et al (doi:10.1016/j.optcom.2006.02.056), and extending the work carried out by 
+%Employing the matter-wave analogue of STIRAP, coherent tunneling via adiabatic passage (CTAP) as outlined by Eckert et al (doi:10.1016/j.optcom.2006.02.056), and extending the work carried out by
 %O'Sullivan et al. (doi:10.1088/0031-8949/2010/T140/014029) on 2D trapping potentials, a fully experimentally realisable 3D system was devised.  Simulations of our proposed system showed verification of the CTAP process, wherein we were able to show transfer fidelities of 99.8\% for counter-intuitive waveguide arrangements, and verification of the difficulties with direct tunneling via intuitive arrangements.
 %I presented this work at DPG 2012, with the final version of the resulting paper currently being finalised.
-%Upon completion of this body of work, I have commenced work on analysing vortex dynamics in Bose-Einstein condensates. I wish to investigate the dynamics of a vortex lattice structure wherein, given sufficient rotation, the vortices will form an Abrikosov lattice pattern in the ground-state. Given careful choice of lattice spacings, periodic pulsing of an optical lattice pattern may yield dynamics akin to that of a delta-kicked harmonic oscillator, and allow for a means of visualising quantum turbulent or chaotic behaviour. As part of this work I have 
+%Upon completion of this body of work, I have commenced work on analysing vortex dynamics in Bose-Einstein condensates. I wish to investigate the dynamics of a vortex lattice structure wherein, given sufficient rotation, the vortices will form an Abrikosov lattice pattern in the ground-state. Given careful choice of lattice spacings, periodic pulsing of an optical lattice pattern may yield dynamics akin to that of a delta-kicked harmonic oscillator, and allow for a means of visualising quantum turbulent or chaotic behaviour. As part of this work I have
 %developed a program for performing integration of the time dependent Gross-Pitaevskii equation which outperforms equivalent programs in Fortran, C and Matlab for achieving results in short timescales.
-%More recently, having transferred to the graduate programme at Okinawa Institute of Science \& Technology (OIST), I have gained more variety in my studies. As a formal requirement, one must take coursework both inside and outside the area of proposed specialisation. I have spent time working in a cryo-electron microscopy biology group, 
-%and taken courses on protein crystallization and in single particle tomography and 3D molecular reconstruction. Given my diverse background, 
+%More recently, having transferred to the graduate programme at Okinawa Institute of Science \& Technology (OIST), I have gained more variety in my studies. As a formal requirement, one must take coursework both inside and outside the area of proposed specialisation. I have spent time working in a cryo-electron microscopy biology group,
+%and taken courses on protein crystallization and in single particle tomography and 3D molecular reconstruction. Given my diverse background,
 %having spent some time in industry before pursuing PhD study, and resulting work carried out as part of the OIST PhD programme, I may offer a unique
 %perspective on many topics. Having a background in high-performance computing I believe is also beneficial, and I may offer insight to many others
 %who wish to perform simulations of complex physical systems in reasonable timescales. Lastly, this school would also offer the ability for me to build my academic network with the possibility of developing future collaborative efforts with other such attendees. It is for these reasons that I wish to attend this summer school.
