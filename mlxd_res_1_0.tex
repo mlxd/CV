@@ -1,6 +1,6 @@
 \documentclass[10pt,a4paper,unicode]{moderncv}
 
-\moderncvtheme[grey]{banking}                % oldstyle banking casual classic
+\moderncvtheme[grey]{classic}                % oldstyle banking casual classic
 
 \usepackage[utf8]{inputenc}
 
@@ -20,7 +20,7 @@
 \email{lee.oriordan@oist.jp}
 \homepage{http://www.linkedin.com/in/loriordan}
 \social[github]{https://github.com/mlxd}
-\extrainfo{\href{http://groups.oist.jp/qsu}{http://groups.oist.jp/qsu}}
+%\extrainfo{\href{http://groups.oist.jp/qsu}{http://groups.oist.jp/qsu}}
 
 \makeatletter
 \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
@@ -43,7 +43,7 @@
 \cventry{2013--2015}{MATLAB instructor}{\textit{Teaching}}{Okinawa Institute of Science and Technology Graduate University, Japan}{}{Created and delivered a two day crash course in MATLAB programming as part of a team.}
 \cventry{2011--2012}{Laboratory teaching assistant}{\textit{Teaching}}{University College Cork, Ireland}{}{Organised, guided and demonstrated undergraduate laboratory sessions in physics experiments.}
 \cventry{2010--2011}{Software engineer}{\textit{Working}}{IBM, Ireland}{}{Development of server-side applications for use with WebSphere Portal platform. Experience using Java, J2EE, XML, XSLT, Ant, Shell scripting, JDBC, Python, C.}
-\cventry{2009}{Product engineer (intern)}{\textit{Working}}{Analog Devices BV, Ireland}{}{Semiconductor device yield improvement team. Hardware and software analysis and development.}
+\cventry{2009}{Product engineer}{\textit{Internship}}{Analog Devices BV, Ireland}{}{Semiconductor device yield improvement team. Hardware and software analysis and development.}
 
 \section{Publications}
 \cvline{2013}{\textit{``Coherent transport by adiabatic passage on atom chips'', }{T.~Morgan, L.~J.~O'Riordan, N.~Crowley, Th.~Busch,} \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys. Rev. A 88, 053618}. DOI: {10.1103/PhysRevA.88.053618}}
@@ -58,24 +58,26 @@
 \cventry{2013-}{Public outreach lectures}{OIST}{}{}{}{}
 \fi
 
+\iffalse
 \section{Competitions \& awards}
 \cventry{2013}{2nd place}{Euraxess Links Japan, Science Slam 2013}{Tokyo Institute of Technology, Japan}{}{Talk title: ``Quantum Typhoons''}{}
 \cventry{2010}{Student of the Year}{School of Science}{Waterford Institute of Technology, Ireland}{}{}{}
 \cventry{2010}{Best undergraduate project}{Department of Computing, Maths and Physics}{Waterford Institute of Technology, Ireland}{}{}{}
 %\cventry{2010}{Earnshaw Medal Nominee}{Institute of Physics}{Ireland}{}{}
 %\cventry{2007}{3rd place}{Robocode: Inter-varsity AI programming competition}{Ireland}{}{}
+\fi
 
 \section{Computer language proficiencies \& skills}
 \cvline{Basic}{\small HTML, C\#, Visual Basic, MPI}
 \cvline{Intermediate}{\small OpenCL, Python, Java, OpenMP, Mathematica, Maple, Bash/Zsh, {\LaTeX}, Julia.}
 \cvline{Expert}{\small C/C++, CUDA, Matlab.}
 \cvline{}{}
-\cvline{Tools}{\small GCC, GDB, CuFFT, GPGPU, Nvidia Visual Profiler, Nvidia Nsight, GNU Scientific Library, Raspberry Pi.}
+\cvline{Tools}{\small GCC, GDB, CuFFT, Nvidia Visual Profiler, Nvidia Nsight, GNU Scientific Library, Raspberry Pi.}
 \cvline{OS \& Applications}{\small Windows, Linux/Unix, OS X, Office (Excel, Word, Powerpoint), iWork (Numbers, Pages, Keynote), LibreOffice/OpenOffice, GIMP, EndNote, OneNote.}
 
 \section{Other projects}
 \cvline{CUDA,C/C++\\Python,Matlab}{Architect \& developer of GPUE: Bose-Einstein condensation simulation suite on GPU. Available at GPUE - \href{http://github.com/mlxd/gpue}{http://github.com/mlxd/gpue}.}
-\cvline{Multiple languages}{Various projects for improving coding skills in computational sciences, available at\newline{} \href{http://github.com/mlxd}{http://github.com/mlxd}.}
+\cvline{Multiple languages}{Various projects for improving my personal coding experience in computational sciences. Available on GitHub\newline{} \href{http://github.com/mlxd}{http://github.com/mlxd}.}
 %\cvline{Misc}{Organisation and development of a framework for business ``ideation'' from research within Okinawan universities.}
 
 \iffalse
@@ -93,10 +95,12 @@
 \cventry{Mar, 2012}{DPG Spring Meeting}{University of Stuttgart}{Germany}{Conference}{Oral presentation: ``\textit{Simulations of 3D atomic dynamics using a GPU accelerated split-operator method}"}
 \fi
 
+\iffalse
 \section{Natural languages}
 \cvlanguage{English}{Native}{}
 \cvlanguage{Irish}{Intermediate}{}
 \cvlanguage{Japanese}{Basic}{}
+\fi
 
 \iffalse
 \section{Competitions \& awards}
