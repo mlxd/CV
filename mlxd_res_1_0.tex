@@ -1,10 +1,10 @@
-\documentclass[10pt,a4paper,unicode]{moderncv}
+\documentclass[11pt,a4paper,unicode]{moderncv}
 
-\moderncvtheme[grey]{banking}                % oldstyle banking casual classic
+\moderncvtheme[grey]{classic}                % oldstyle banking casual classic
 
 \usepackage[utf8]{inputenc}
 
-\usepackage[scale=0.90]{geometry}
+\usepackage[scale=0.88]{geometry}
 \setlength{\hintscolumnwidth}{3cm}
 
 \usepackage{hyperref}								% to use hyperlinks
@@ -16,11 +16,11 @@
 %\title{BSc(Hons), AMInstP}               % optional, remove the line if not wanted
 %\address{Quantum Systems Unit, Okinawa Institute of Science and Technology Graduate University}{1919-1 Tancha, Onna-son, Okinawa, Japan 904-0495}   % optional, remove the line if not wanted
 \mobile{+81 (0)80 6498 4323}
-\phone{+81 (0)98 966 1588}
+%\phone{+81 (0)98 966 1588}
 \email{lee.oriordan@oist.jp}
+\extrainfo{\href{http://groups.oist.jp/qsu}{http://groups.oist.jp/qsu}}
 \social[linkedin]{loriordan}
 \social[github]{mlxd}
-%\extrainfo{\href{http://groups.oist.jp/qsu}{http://groups.oist.jp/qsu}}
 
 \makeatletter
 \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
@@ -35,27 +35,29 @@
 \maketitle
 \vspace*{-30pt}
 \section{Education}
-\cventry{2012--Present}{PhD in Science (Physics)}{Quantum Systems Unit, Okinawa Institute of Science and Technology Graduate University}{OIST, Japan}{}{}
-\cventry{2011--2012}{PhD in Physics}{Ultracold Quantum Gases group, University College Cork}{UCC, Ireland}{}{Transferred to OIST, Japan.}
+\cventry{2012--Present}{PhD in Science (Physics)}{Quantum Systems Unit, Okinawa Institute of Science and Technology Graduate University}{OIST, Japan}{Expected graduation: March, 2017}{}
+\cventry{2011--2012}{PhD in Physics}{Ultracold Quantum Gases group, University College Cork}{UCC, Ireland}{}{Transferred to OIST, Japan after completing first year.}
 \cventry{2006--2010}{BSc (Hons) in Physics with Computing}{Waterford Institute of Technology}{WIT, Ireland}{First class honours}{}
 
 \section{Experience}
-\cventry{2013--2015}{MATLAB instructor}{\textit{Teaching}}{OIST, Japan}{}{Created and delivered a two day crash course in MATLAB programming on multiple occasions as part of a team.}
-\cventry{2011--2012}{Laboratory teaching assistant}{\textit{Teaching}}{UCC, Ireland}{}{Organised, guided and demonstrated undergraduate laboratory sessions in physics experiments.}
-\cventry{2010--2011}{Software engineer}{\textit{Working}}{IBM, Ireland}{}{Developed server-side applications for use with WebSphere Portal platform. Experience using Java, J2EE, XML, XSLT, Ant, Shell scripting, JDBC, Python, C.}
-\cventry{2009}{Product engineer}{\textit{Internship}}{Analog Devices BV, Ireland}{}{Improved semiconductor device yield using thorough analysis and development. Designed software routines to automate previously manual device analysis procedure.}
+\cventry{2012--Present}{Research assistant (PhD)}{\textit{Education}}{OIST, Japan}{}{Researching theory of cold atomic quantum systems. Experience in linear algebra, differential equations, analysis, probability theory, and numerical algorithms. Computational modeling and numerical solution of problems using \textsc{MATLAB}, Mathematica, C/C++, CUDA, Python, and pencil \& paper.}{}
+\cventry{2013--2015}{ \textsc{MATLAB} instructor}{\textit{Teaching}}{OIST, Japan}{}{Delivered lectures on using \textsc{MATLAB} as a research computing environment. Emphasised acceleration methods for numerical linear algebra problems.}
+\cventry{2011--2012}{Laboratory teaching assistant}{\textit{Teaching}}{UCC, Ireland}{}{Demonstrator of experimental laboratory work in physics for undergraduates.}
+\cventry{2010--2011}{Software engineer}{\textit{Working}}{IBM, Ireland}{}{Developed software for IBM WebSphere Portal Server. Further information available upon request.}
+\cventry{2009}{Product engineer}{\textit{Internship}}{Analog Devices BV, Ireland}{}{Worked on failure and yield analysis of semiconductor devices. Further information available upon request.}
 
 \section{Publications}
 \cvline{2013}{\textit{``Coherent transport by adiabatic passage on atom chips'', }{T.~Morgan, L.~J.~O'Riordan, N.~Crowley, Th.~Busch,} \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys. Rev. A 88, 053618}. DOI: {10.1103/PhysRevA.88.053618}}
 \cvline{2016}{\textit{``Moir\'e superlattice structures in kicked Bose-Einstein condensates'', }{L.~J.~O'Riordan, A.~C.~White, Th.~Busch.} \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys. Rev. A 93, 023609}. DOI: {10.1103/PhysRevA.93.023609}}
+\cvline{2016}{\textit{``Topological defect dynamics of vortex lattices in Bose--Einstein condensates'', }{L.~J.~O'Riordan, Th.~Busch.} \href{https://arxiv.org/abs/1608.07756}{arXiV:1608.07756}. {Submitted for publication in Physical Review A.}}
 
 %\iffalse
 \section{University service}
-\cventry{2015-2016}{Chair}{Student Council}{OIST, Japan}{}{}{}
-%\cventry{2014-}{Representative}{Quantum Systems Unit}{Scientific Computing Section Advanced Users Group}{}{}{}
+\cventry{2015-2016}{Chair}{Student Council}{OIST, Japan}{}{Elected by student body. Facilitated regular meetings between the student body and faculty. Improved institutional policies and conditions for students}{}
+\cventry{2014-}{HPC advanced users group representative}{Quantum Systems Unit}{OIST, Japan}{}{Research unit representative to the OIST HPC and scientific computing team. Trained group members on the use of HPC software and advanced programming techniques}{}
 \cventry{2013-2016}{President}{Music Club}{OIST, Japan}{}{}{}
-%\cventry{2013-}{Student member}{ITSSC committee, OIST.}{}{}{}{}
-\cventry{2013-2015}{Lecturer}{Outreach}{OIST, Japan}{}{}{}
+\cventry{2013-2016}{ITSSC member}{OIST}{}{}{Member of university task force for updating IT policies and compliance.}{}
+\cventry{2013-2015}{Lecturer \& speaker}{Outreach}{OIST, Japan}{}{}{}
 %\fi
 
 %\iffalse
@@ -67,18 +69,23 @@
 %\cventry{2007}{3rd place}{Robocode: Inter-varsity AI programming competition}{Ireland}{}{}
 %\fi
 
+\iffalse
 \section{Computer language proficiencies \& skills}
 \cvline{Basic}{\small HTML, C\#, Visual Basic, MPI}
 \cvline{Intermediate}{\small OpenCL, Python, Java, OpenMP, Mathematica, Maple, Bash/Zsh, {\LaTeX}, Julia.}
-\cvline{Expert}{\small C/C++, CUDA, Matlab.}
+\cvline{Expert}{\small C/C++, CUDA, \textsc{MATLAB}.}
 \cvline{}{}
 \cvline{Tools}{\small GCC, GDB, CuFFT, Nvidia Visual Profiler, Nvidia Nsight, GNU Scientific Library, Raspberry Pi.}
 \cvline{OS \& Applications}{\small Windows, Linux/Unix, OS X, Office (Excel, Word, Powerpoint), iWork (Numbers, Pages, Keynote), LibreOffice/OpenOffice, GIMP, EndNote, OneNote.}
+\fi
 
-\section{Other projects}
-\cvline{CUDA,C/C++\\Python,Matlab}{Architect \& developer of GPUE: Bose--Einstein condensation simulation suite on GPU. Available at GPUE - \href{http://github.com/mlxd/gpue}{http://github.com/mlxd/gpue}.}
-\cvline{Multiple languages}{Various projects for improving my personal coding experience in computational sciences. Available on GitHub -  \href{http://github.com/mlxd}{http://github.com/mlxd}.}
-%\cvline{Misc}{Organisation and development of a framework for business ``ideation'' from research within Okinawan universities.}
+
+\section{Software projects (GitHub)}
+\cvline{GPUE}{Architect \& developer of GPUE: GPU-enabled Gross--Pitaevskii equation solver; a pseudospectral linear and nonlinear partial differential equation solver and simulation tool. Languages: CUDA, C/C++, Python, \textsc{MATLAB}, Shell. Available at \href{http://github.com/mlxd/gpue}{mlxd/gpue}.}
+\cvline{GraphIt}{Graph generation library for 2D spatial data. Language: C++11. Available at \href{http://github.com/mlxd/GraphIt}{mlxd/GraphIt}. }
+\cvline{hexacorr}{Correlation functions for 2D spatial data. Language: \textsc{MATLAB}. Available at \href{http://github.com/mlxd/hexacorr}{GH/mlxd/hexacorr}.}
+\cvline{Sparsey.jl}{Finite difference sparse matrix numerical diagonalizer of the quantum harmonic oscillator Hamiltonian. Language: Julia. Available at \href{http://github.com/mlxd/sparsey.jl}{mlxd/sparsey.jl}.}
+
 
 \iffalse
 \section{Presentations}
