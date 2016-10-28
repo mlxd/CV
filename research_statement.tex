@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper,unicode]{moderncv}
+\moderncvtheme[grey]{mlxdmoderncv}                % oldstyle banking casual classic
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.80]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
+
+%\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\firstname{Lee James}
+\familyname{O'Riordan}
+%\title{BSc(Hons), AMInstP}
+\address{Quantum Systems Unit, Okinawa Institute of Science and Technology Graduate University}{1919-1 Tancha, Onna-son, Okinawa, Japan 904-0495}
+\mobile{+81 (0)80 6498 4323}
+\email{lee.oriordan@oist.jp}
+\social[linkedin]{loriordan}
+\social[github]{mlxd}
+
+\makeatletter
+
+\begin{document}
+    \recipient{<name>}{}
+    \date{\today} % Letter date
+    \opening{Dear Sir/Madam,}
+    \closing{Sincerely,}
+    \makelettertitle
+{
+    In this letter I will present a summary and statement of my research to date, as well as my future plans. My PhD was undertaken at the Okinawa Institute of Science and Technology Graduate University, Japan, and also briefly at University College Cork, Ireland, under the supervision of Prof. Thomas Busch. My area of research is in theoretical cold atomic physics, specifically on the dynamics of Bose--Einstein condensates. My PhD work aims to understand the dynamics of perturbations on quantum states with large values of angular momentum. I have worked primarily on understanding the dynamics of superfluid dynamics and quantum vortices. For these studies I have gained expertise in computational techniques that I know will be beneficial and apt for a variety of problems.
+
+    Over the course of my PhD I have developed a very capable numerical solver suite for both linear and nonlinear Schr\"odinger systems using graphics processing units (GPUs) as computational accelerators. Using variants of this code, I have demonstrated 3D numerical integration of the Schr\"odinger equation for an experimentally realistic system to investigate spatial adibatic passage (SAP), where I was the first to develop and demonstrate high-performing code in this area [\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys.~Rev.~A~88, 053618 (2013)}]. More recently, I have developed code for simulating vortex lattice dynamics in rapidly rotating Bose--Einstein condensates in two-dimensions titled ``GPUE''~[\href{https://github.com/mlxd/gpue}{GitHub:mlxd/gpue}]. The resulting software methods have been independently performance tested, and have been shown to outperform well-established and mature software packages in C/C++ and \textsc{MATLAB}~[http://peterwittek.com/gpe-comparison.html].
+
+    My thesis work concentrates on applying two types of perturbations to the equilibrium state of the rapidly rotating condensate system: i) the modification of the phonon spectrum of the condensate through the use of a kicked optical potential, without modification of the angular momentum; ii) the direct control of the topological excitations (vortices), and hence the angular momentum, which is performed with direct phase engineering of the wavefunction. Both methods are experimentally realisable using currently available state-of-the-art experimental control techniques. Using these techniques I have studied the robustness of the vortex lattice system~[\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys. Rev. A 93, 023609 (2016)}], and investigated order-to-disorder transitions and the creation of topological lattice defects~[\href{https://arxiv.org/abs/1608.07756}{arXiv:1608.07756}, accepted for publication in Physical Review A].
+
+    The use of a direct phase engineering approach shows itself to be a good candidate for investigating order-to-disorder transitions in a vortex lattice system. In a recent work I demonstrated the creation of stable topological defects in the vortex lattice which persisted for long times through the creation of vacancies in the vortex lattice. By examining the orientational correlations between vortices and nearest neighbours, we observed that these correlations diminish at a different rate depending upon the application of specific perturbation profiles. We classify the lattice disorder using the correlation functions, and also by the presence of vortices with non sixfold nearest neighbours using Delaunay triangulations. While not yet investigated, I expect to examine whether a hexatic phase can be easily created in the vortex lattice system using this approach.
+
+    Recently, I have begun a collaboration with another researcher on the code to allow for a three-dimensional distributed Gross--Pitaevskii solver using graphics processors. The code is currently being extending with the ability to examine artificial gauge potentials, and will in time allow for the investigation of vortex knots, tangles, and reconnections in 3D condensates. By maintaining the current performance lead over comparable suites, I expect this software to eventually become the de-facto standard for superfluid turbulence simulations. For a further extension of the work, I aim to implement a GPU-enabled numerical Bogoliubov-de Gennes solver to examine the excitation spectrum of the resulting condensate simulations. If the resources are available, I also aim to port this suite of tools to the Julia programming language and integrate this work into the Intel Xeon Phi platform, which can remove the need to require distributed software.
+
+    With this extended toolset, examining the dynamics of a variety of complex quantum systems in detail will be possible. The applicability of machine learning, artificial intelligence, and optimal control techniques can also potentially allow for improvements to both the numerical simulations, as well as the understanding of the resulting dynamical behaviours. I intend to spend devote some time investigating the applicability of these methods to simulating quantum systems. Some potential works that can take advantage of these tools include investigations of quantum turbulence starting from well ordered systems, artificial magnetism, and defect and impurity dynamics in superfluid systems. Quantum turbulence using vortices in two and three dimensional condensates will be directly accessible using using gauge potentials to define well-ordered starting configurations. Due to the similarity between superconductors in magnetic fields and rotating condensates, using gauge potentials will also allow for investigations into artificial magnetism, with the potential for developing simulators of condensed matter physics. I expect this to be a useful set of tools to better understand the behaviour of such systems.
+
+    While I have listed my work on quantum dynamics and high performance numerical methods, my interests for future work are not limited to these systems. I have a large interest in the use of high-performance numerical methods for solving real-world problems, as well as those for further advancing quantum technologies. The use of machine learning techniques are becoming more widespread in many disciplines, and I am curious to understand their application to problems of physical systems. Performance optimisation of software codes is also a passion of mine, and I have attained a great deal of experience with this during my PhD. I have also gained a variety of experience in many areas outside my specialisation. I have spent time working with cryo-electron microscopy, protein crystallization, single particle tomography, 3D molecular reconstruction, fluid mechanics, and optics.
+
+    Given my diverse background, and having spent some time in industry before pursuing PhD study, I expect simulations involving GPU and other accelerators codes will become common place in research of physical systems. I anticipate that it will be imperative to develop the skills and techniques necessary to utilise these advanced devices. They can allow for more complex and interesting problems to be solved, as well as interdisciplinary studies to be undertaken, in significantly shorter times than previously required.
+
+    %During my time in the graduate programme at Okinawa Institute of Science \& Technology Graduate University (OIST), I have also gained a variety of experience in many areas outside my specialisation. As a formal requirement, one must undertake coursework both inside and outside the area of proposed specialisation. I have spent time working with cryo-electron microscopy, protein crystallization, single particle tomography, 3D molecular reconstruction, fluid mechanics, and optics. Given my diverse background, having spent some time in industry before pursuing PhD study, my resulting work at OIST, as well as my experiences to date, I may offer a unique perspective to a variety of problems.
+
+    %While I have listed my work on quantum dynamics using HPC methods, my interests for future work are not limited to these systems. I have a large interest in the use of high-performance numerical methods for solving real-world problems, as well as those for further advancing quantum technologies. The use of machine learning techniques are becoming more widespread in many disciplines, and I am curious to understand their application to problems of physical systems. Performance optimisation of software codes is also a passion of mine, and I have attained a great deal of experience with this during my PhD.
+
+    %Developing algorithms for high-performance numerical technologies such as GPU computing and Intel Xeon Phi's can allow for acquiring and analysing interesting data in many emerging fields. While I have mentioned these as examples, I am keen to undertake work on interesting problems, and expand my set of skills and experiences. I intend to aim at improving numerical codebases for examining complex condensate systems, where I currently am working on a collaborative codebase for investigating the use of aritificial gauge fields in condensate systems. As artificial gauge fields in condensates are becoming a popular topic, I expect this to be a useful set of tools to better understand the behaviour of these systems.
+
+    %Outside of my recent academic pursuits, I have also been elected to Chair of the Student Assembly and held this position for the full length of term, 2015-2016. Through hard work, the Student Council and I were able to directly influence many new rules and policies of this growing university.
+
+    %If you find that I may be a suitable for a position, I would be more than happy to better discuss my possible contributions in person, or via Skype. Please do not hesitate to get in touch for further information.
+}
+
+\makeletterclosing
+\end{document}
