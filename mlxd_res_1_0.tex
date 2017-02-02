@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,unicode]{moderncv}
+\documentclass[12pt,a4paper,unicode]{moderncv}
 
 \moderncvtheme[grey]{classic}                % oldstyle banking casual classic
 
@@ -40,24 +40,42 @@
 \cventry{2006--2010}{BSc (Hons) in Physics with Computing}{Waterford Institute of Technology (WIT)}{Ireland}{First class honours}{}
 
 \section{Experience}
-\cventry{2012--Present}{Research assistant (PhD)}{\textit{Education}}{OIST, Japan}{}{Researching theory of cold atomic quantum systems. Experience in linear algebra, differential equations, analysis, probability theory, and numerical algorithms. Computational modeling,  analytical, and numerical solution of problems using \textsc{MATLAB}, Mathematica, C/C++, CUDA, Python, and pencil \& paper.}{}
-\cventry{2013,2015}{ \textsc{MATLAB} instructor}{\textit{Teaching}}{OIST, Japan}{}{Delivered lectures on using \textsc{MATLAB} as a research computing environment with emphasis on acceleration methods for numerical problems.}
+\cventry{2012--Present}{Research assistant (PhD)}{\textit{Research}}{OIST, Japan}{}{Researching theory of cold atomic quantum systems. Experience in linear algebra, multivariate calculus, differential equations, analysis, probability theory, and numerical algorithms. Computational modeling, analytical, and numerical solution of problems using \textsc{MATLAB}, Mathematica, C/C++, CUDA, Python, Julia, and pencil \& paper.}{}
+%\cventry{2013,2015}{ \textsc{MATLAB} instructor}{\textit{Teaching}}{OIST, Japan}{}{Delivered lectures on using \textsc{MATLAB} as a research computing environment with emphasis on acceleration methods for numerical problems.}
 \cventry{2011--2012}{Laboratory teaching assistant}{\textit{Teaching}}{UCC, Ireland}{}{Demonstrator of experimental laboratory work in physics for undergraduates.}
 \cventry{2010--2011}{Software developer}{\textit{Working}}{IBM, Ireland}{}{Developed software for IBM WebSphere Portal Server. Experience with Java, XML, XLST, Python, Shell. Further information available upon request.}
 \cventry{2009}{Product engineer}{\textit{Internship}}{Analog Devices BV, Ireland}{}{Analysis of semiconductor device yields and failures. Further information available upon request.}
 
+\section{Software engineering experience}
+\cvline{}{I have developed research codes for various topics such as data analysis, high performance computing simulations of quantum systems, and tomographic image processing. Currently, I have worked with C/C++, CUDA, Python, \textsc{MATLAB}, OpenCL, Julia, Mathematica, Shell (Bash/Zsh), \LaTeX, and Java. Listed below are a subset of projects that I have written, and are available on GitHub.}
+\cvline{GPUE}{GPU computing enabled Gross--Pitaevskii equation solver; a pseudo-spectral linear and nonlinear partial differential equation solver and simulation tool for superfluid dynamics. Languages: CUDA, C/C++, Python, \textsc{MATLAB}, Shell. Available at \href{http://github.com/gpue-group/gpue}{gpue-group/gpue}. All data from the above publications were generated using this tool. Publication on this tool in preparation.}
+\cvline{GraphIt}{Graph generation library for 2D spatial data. Language: C++11. Available at \href{http://github.com/mlxd/GraphIt}{mlxd/GraphIt}. }
+\cvline{hexacorr}{Correlation functions for 2D spatial data. Used extensively in published works above. Language: \textsc{MATLAB}. Available at \href{http://github.com/mlxd/hexacorr}{GH/mlxd/hexacorr}.}
+\cvline{Sparsey.jl}{Finite difference sparse matrix numerical diagonalizer of the quantum harmonic oscillator Hamiltonian. Preliminary work. Language: Julia. Available at \href{http://github.com/mlxd/sparsey.jl}{mlxd/sparsey.jl}.}
 %\pagebreak
+
+%\iffalse
+\section{Computer language proficiencies \& skills}
+\cvline{0-2 years}{\small HTML, C\#, Visual Basic, MPI, Javascript, OpenCL}
+\cvline{2-4 years}{\small Python, Java, OpenMP, Mathematica, Bash/Zsh, {\LaTeX}, Julia.}
+\cvline{4+ years}{\small C/C++, CUDA, \textsc{MATLAB}.}
+\cvline{}{}
+%\cvline{Tools}{\small GCC, GDB, CuFFT, Nvidia Visual Profiler, Nvidia Nsight, GNU Scientific Library, Raspberry Pi.}
+%\cvline{OS \& Applications}{\small Windows, Linux/Unix, OS X, Office (Excel, Word, Powerpoint), iWork (Numbers, Pages, Keynote), LibreOffice/OpenOffice, GIMP, EndNote, OneNote.}
+%\fi
+
 \section{Publications}
-\cvline{2013}{\textit{``Coherent transport by adiabatic passage on atom chips'', }{T.~Morgan, L.~J.~O'Riordan, N.~Crowley, Th.~Busch,} \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys. Rev. A 88, 053618 (2013)}. DOI: {10.1103/PhysRevA.88.053618}}
+\cvline{2016}{\textit{``Topological defect dynamics of vortex lattices in Bose--Einstein condensates'', }{L.~J.~O'Riordan, Th.~Busch.} \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603}{Phys. Rev. A 94, 053603 (2016)}. DOI: {10.1103/PhysRevA.94.053603}}
 \cvline{2016}{\textit{``Moir\'e superlattice structures in kicked Bose-Einstein condensates'', }{L.~J.~O'Riordan, A.~C.~White, Th.~Busch.} \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys. Rev. A 93, 023609 (2016)}. DOI: {10.1103/PhysRevA.93.023609}}
-\cvline{2016}{\textit{``Topological defect dynamics of vortex lattices in Bose--Einstein condensates'', }{L.~J.~O'Riordan, Th.~Busch.} \href{https://arxiv.org/abs/1608.07756}{arXiV:1608.07756}. {Accepted for publication in Physical Review A.}}
+\cvline{2013}{\textit{``Coherent transport by adiabatic passage on atom chips'', }{T.~Morgan, L.~J.~O'Riordan, N.~Crowley, Th.~Busch,} \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys. Rev. A 88, 053618 (2013)}. DOI: {10.1103/PhysRevA.88.053618}}
+
 
 %\iffalse
 \section{University service}
 \cventry{2015-2016}{Chair}{Student Council}{OIST, Japan}{}{Elected by student body. Facilitated regular meetings between the student body and faculty. Improved institutional policies and conditions for students}{}
 \cventry{2014-}{HPC advanced users group representative}{Quantum Systems Unit}{OIST, Japan}{}{Research unit representative to the OIST HPC and scientific computing team. Trained group members on the use of HPC software and advanced programming techniques}{}
-\cventry{2013-2016}{President}{Music Club}{OIST, Japan}{}{}{}
-\cventry{2013-2016}{ITSSC member}{OIST}{}{}{Member of university task force for updating IT policies and compliance.}{}
+%\cventry{2013-2016}{President}{Music Club}{OIST, Japan}{}{}{}
+%\cventry{2013-2016}{ITSSC member}{OIST}{}{}{Member of university task force for updating IT policies and compliance.}{}
 \cventry{2013-2015}{Lecturer \& speaker}{Outreach}{OIST, Japan}{}{}{}
 %\fi
 
@@ -70,23 +88,6 @@
 %\cventry{2007}{3rd place}{Robocode: Inter-varsity AI programming competition}{Ireland}{}{}
 %\fi
 
-\iffalse
-\section{Computer language proficiencies \& skills}
-\cvline{Basic}{\small HTML, C\#, Visual Basic, MPI}
-\cvline{Intermediate}{\small OpenCL, Python, Java, OpenMP, Mathematica, Maple, Bash/Zsh, {\LaTeX}, Julia.}
-\cvline{Expert}{\small C/C++, CUDA, \textsc{MATLAB}.}
-\cvline{}{}
-\cvline{Tools}{\small GCC, GDB, CuFFT, Nvidia Visual Profiler, Nvidia Nsight, GNU Scientific Library, Raspberry Pi.}
-\cvline{OS \& Applications}{\small Windows, Linux/Unix, OS X, Office (Excel, Word, Powerpoint), iWork (Numbers, Pages, Keynote), LibreOffice/OpenOffice, GIMP, EndNote, OneNote.}
-\fi
-
-
-\section{Software engineering experience}
-\cvline{}{I have extensive experience in programming with many different languages. I have developed research codes for various topics such as data analysis, high performance computing enabled simulations of quantum systems, and tomographic image processing. Currently, I have worked with C/C++, CUDA, Python, \textsc{MATLAB}, Julia, Mathematica, Shell (Bash/Zsh), \LaTeX, and Java. Listed below are a subset of projects that I have written, and are available on GitHub.}
-\cvline{GPUE}{Architect \& developer of GPUE: GPU-enabled Gross--Pitaevskii equation solver; a pseudospectral linear and nonlinear partial differential equation solver and simulation tool. Languages: CUDA, C/C++, Python, \textsc{MATLAB}, Shell. Available at \href{http://github.com/mlxd/gpue}{mlxd/gpue}.}
-\cvline{GraphIt}{Graph generation library for 2D spatial data. Language: C++11. Available at \href{http://github.com/mlxd/GraphIt}{mlxd/GraphIt}. }
-\cvline{hexacorr}{Correlation functions for 2D spatial data. Language: \textsc{MATLAB}. Available at \href{http://github.com/mlxd/hexacorr}{GH/mlxd/hexacorr}.}
-\cvline{Sparsey.jl}{Finite difference sparse matrix numerical diagonalizer of the quantum harmonic oscillator Hamiltonian. Language: Julia. Available at \href{http://github.com/mlxd/sparsey.jl}{mlxd/sparsey.jl}.}
 
 
 \iffalse
@@ -116,7 +117,7 @@
 \cventry{2014}{Best Customer Interaction}{Kyued-Up Innovation Event}{Okinawa Institute of Science and Technology Graduate University, Japan}{Project title: ``Okinawa Science Discovery Center''}{\href{http://pullapproach.com}{http://pullapproach.com}}{}
 \cventry{2013}{2nd place}{Euraxess Links Japan, Science Slam 2013}{Tokyo Institute of Technology}{Japan}{Talk title: ``Quantum Typhoons''}{}
 \cventry{2010}{Student of the Year}{School of Science, Waterford Institute of Technology}{Ireland}{}{}
-\cventry{2010}{Best undergraduate research project}{Department of Computing, Maths and Physics, Waterford Institute of Technology}{Ireland}{}{}
+\cventry{2010}{Best undergraduate research project}{Department of Computing, Mathematics and Physics, Waterford Institute of Technology}{Ireland}{}{}
 \fi
 
 \iffalse
