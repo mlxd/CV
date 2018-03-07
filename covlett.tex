@@ -1,54 +1,41 @@
-\documentclass[12pt,a4paper,unicode]{moderncv}
+\documentclass[11pt,a4paper,unicode]{moderncv}
 \moderncvtheme[grey]{classic}                % oldstyle banking casual classic
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.80]{geometry}
-\setlength{\hintscolumnwidth}{3cm}
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}
 
 %\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
-
 \firstname{Lee James}
 \familyname{O'Riordan}
-%\title{BSc(Hons), AMInstP}
-\address{Quantum Systems Unit, Okinawa Institute of Science and Technology Graduate University}{1919-1 Tancha, Onna-son, Okinawa, Japan 904-0495}
-\mobile{+81 (0)80 6498 4323}
-\email{lee.oriordan@oist.jp}
+\title{Dr.}
+\address{Lawrence Berkeley National Labs}{1 Cyclotron Road Mailstop 33R0345}{Berkeley, CA 94709, United States}
+\mobile{+1 (510) 900 3870}
+\email{loriordan@lbl.gov}
 \social[linkedin]{loriordan}
 \social[github]{mlxd}
 
 \makeatletter
 
 \begin{document}
-    \recipient{}{}
+    \recipient{Station Q}{Microsoft Research}
     \date{\today} % Letter date
-    \opening{Dear xyz,}
+    \opening{Dear Station Q Team,}
     \closing{Sincerely,}
     \makelettertitle
 {
-    I am writing to express interest in applying for the Research Fellowship in Quantum Engineered Hybrid Systems. In this letter I will present a brief summary and statement of my research to date, as well as my applicability for this role. My PhD was undertaken at the Okinawa Institute of Science and Technology Graduate University, Japan, and also briefly at University College Cork, Ireland, under the supervision of Prof. Thomas Busch. My area of research is in theoretical cold atomic physics, specifically on the dynamics of Bose--Einstein condensates. My PhD work aims to understand the dynamics of perturbations on quantum states with large values of angular momentum. I have worked primarily on understanding the dynamics of superfluids and quantum vortices. For these studies I have gained expertise in computational techniques that I know will be beneficial for a variety of problems.
+    \vspace{-0.5cm}
+    I am writing to express interest in undertaking a postdoctoral position at Station Q witn Microsoft Research. I have completed my PhD earlier this year studying the dynamics of perturbed quantum fluids, and have since taken a postdoctoral role allowing me to explore developing exascale computational software methods. I am interested in working within the quantum technology realm for my career, as I know this will soon become the paradigm for technologies in coming years.
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\iffalse
-    Understanding the behaviour of Bose--Einstein condensate vortex lattices can help with engineering quantum states for future technologies. Ideally, they can be used for long-term memory storage in quantum computing systems as they are topologically protected and are very robust. They also allow the study of quantum mechanical effects on large scales, and the inherent periodicity makes them a great tool for simulating condensed matter physics. Furthermore, perturbed vortex lattices can be used to investigate turbulent, and possibly chaotic, quantum behaviour. While turbulent classical systems are notoriously hard to understand and control, quantum turbulence is thought to offer a more controllable route due to the quantisation condition of the circulation. It is therefore of large interest to develop new tools for manipulating and engineering specific states or rotating condensates.
+    My most recent published works have been working with the dynamics of quantised vorticity in Bose--Einstein condensates. I have found this system to be quite interesting as it offers analogues to solid-state systems, and is great for exploring nonlinear quantum dynamics. More recently I have been working on further developing my computational and data analysis experience, where I have taken a role at Berkeley Labs (LBNL) examining X-ray crystallography data from the LCLS (Linear coherent light source) at SLAC, Stanford, and preparing these softwares for the accelerator upgrade to LCLS2. For this project to succeed the team and I will require processing of over of a million images in realtime, where NERSC's supercomputer Cori will be used for this processing. To date we have successfully ported CCTBX (Computational Crystallography Toolbox), the de-facto standard for use in this field, to Intel's Knights Landing (Xeon Phi) architecture. Moving forward will require optimisation and streamlining of the processing stages of the software pipeline.
 
-    My thesis work concentrates on applying two types of perturbations to the equilibrium state of the rapidly rotating condensate system: i) the modification of the phonon spectrum of the condensate through the use of a kicked optical potential, without modification of the angular momentum; ii) the direct control of the topological excitations (vortices), and hence the angular momentum, which is performed with direct phase engineering of the wavefunction. Both methods are realisable using currently available state-of-the-art experimental control techniques. Using these techniques I have studied the creation of moir\'e superlattice patterns and the robustness of the vortex lattice system~[\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys. Rev. A 93, 023609 (2016)}], and have investigated order-to-disorder transitions and the creation of topological lattice defects~[\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603}{Phys. Rev. A 94, 053603 (2016)}].
-%\fi
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    For my next role I am looking for taking my experience with quantum systems and computational research to date and applying it to the R\&D of quantum technologies. While I do not have publications in quantum information, given much of my work was on BEC dynamics and atomic control, this is an area I am very keen to gain experience in, and I aim to gain exposure to this area until a viable position becomes available. I feel that with my background in quantum gases and atom optics I will be capable of picking up the knowledge to work effectively in this field. Similarly, the application of machine learning theory rooted in quantum mechanics is an area I am also heavily interested in, and I am also interested in learning as much as possible about this field.
 
-    Over the course of my PhD I have also developed very capable numerical solvers for both linear and nonlinear Schr\"odinger systems using graphics processing units (GPUs) as computational accelerators. Using variants of these codes, I have demonstrated 3D numerical integration of the Schr\"odinger equation for experimentally realistic systems to investigate spatial adiabatic passage (SAP)~[\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys.~Rev.~A~88, 053618 (2013)}]. More recently, I have developed an open-sourced code for simulating vortex lattice dynamics in rapidly rotating Bose--Einstein condensates in two-dimensions, titled ``GPUE''~[\href{https://github.com/mlxd/gpue}{GitHub:mlxd/gpue}], which was used in my works on vortex lattices. The resulting software methods have been independently performance tested, and have been shown to outperform well-established and mature software packages in C/C++ and \textsc{MATLAB}~[http://peterwittek.com/gpe-comparison.html]. Developing algorithms for high-performance numerical technologies such as GPU computing and Intel Xeon Phi's can allow for acquiring and analysing interesting data in many emerging fields. While I have mentioned these as examples, I am keen to undertake work on interesting problems, and expand my set of skills and experiences.
+    %During my time in the graduate programme at OIST, and my software engineering experience prior to starting my research career, I have also gained a variety of experience in many areas outside my specialisation, such as cryo-electron microscopy, protein crystallization, 3D molecular reconstruction, fluid mechanics, and optics. With these I may offer a unique perspective to a variety of problems.
 
-    %Recently, I have begun a collaboration with another researcher on the code to allow for solution of the three-dimensional Gross--Pitaevskii equation using graphics processors. The code is currently being extending with the ability to include gauge potentials, and will in time allow for the investigation of vortex knots, tangles, and reconnections in 3D condensates. The use of gauge potentials will also allow for the investigations into artificial magnetism, with the potential for developing simulators of crystalline condensed matter physics. Quantum turbulence using vortices in two and three dimensional condensates can also be directly accessed using gauge potentials to define well-ordered starting configurations. %While I have not worked with superfluid Fermi systems, nor polaron BEC systems, I would like to gain some understanding of the behaviour of these such systems to allow for their simulation also.
+    As some evidence to my computational background, I have published several works using GPU computing methods for the simulation of both linear and nonlinear quantum dynamics [\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys.~Rev.~A~88, 053618 (2013)}, \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys.~Rev.~A~93, 023609 (2016)}, \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603}{Phys.~Rev.~A~94, 053603 (2016)}]. The software for the above works was realised as an open-souced application [\href{https://github.com/gpue-group/gpue}{GitHub:gpue-group/gpue}], and has been independently performance tested to show itself as the fastest of its kind [\href{http://peterwittek.com/gpe-comparison.html}{Wittek:blog}]. All current work at Berkeley Labs will appear in conference proceedings and publications in time.
 
-    %During my time in the graduate programme at OIST, I have also gained a variety of experience in many areas outside my specialisation. I have spent time studying cryo-electron microscopy, protein crystallization, single particle tomography, 3D molecular reconstruction, fluid mechanics, and optics. Given my diverse background, having spent some time in industry before pursuing PhD study, my resulting work at OIST, as well as my experiences to date, I may offer a unique perspective to a variety of problems.
-
-    While I have listed my work on quantum dynamics using HPC methods, my interests for future work are not limited to these systems. I have a large interest in the use of high-performance numerical methods for solving real-world problems, as well as those for further advancing quantum technologies. The use of machine learning techniques are becoming more widespread in many disciplines, and I am curious to understand their application to problems of physical systems. I intend to apply deep learning methods and techniques to many-body physics problems. Though I currently have little training in machine learning methods, I intend to study and research in this area for my own interests. The experience I would gain can allow me to introduce a new set of skills and techniques into the field of understanding the dynamics of quantum mechanical systems. %Performance optimisation of software codes is also a passion of mine, and I have attained a great deal of experience with this during my PhD.
-
-    %Developing algorithms for high-performance numerical technologies such as GPU computing and Intel Xeon Phi's can allow for acquiring and analysing interesting data in many emerging fields. While I have mentioned these as examples, I am keen to undertake work on interesting problems, and expand my set of skills and experiences. %I intend to aim at improving numerical codebases for examining complex condensate systems, where I currently am working on a collaborative codebase for investigating the use of aritificial gauge fields in condensate systems. As artificial gauge fields in condensates are becoming a popular topic, I expect this to be a useful set of tools to better understand the behaviour of these systems.
-
-    %While I currently do not have any research experience on hybrid quantum systems, I am aware of projects undertaken by members of this research group in the area, such as that of Lo Gullo \textit{et al}~[Phys. Rev. A 84, 063815 (2011)] and Fogarty \textit{et al}~[Phys. Rev. A 94, 023844 (2016)]. I am keen to learn more and offer my computational experience to problems in this area.
-
-    During my time in the graduate programme at OIST, I have also gained  experience in many areas outside my specialisation. I have spent time studying cryo-electron microscopy, protein crystallization, single particle tomography, 3D molecular reconstruction, fluid mechanics, and optics. Outside of my recent academic pursuits, I have also been elected to Chair of the Student Assembly and held this position for the full length of term, 2015-2016. Through hard work, the Student Council and I were able to directly influence many new rules and policies of this growing university. Given my diverse background, having spent some time in industry before pursuing PhD study, my resulting work at OIST, as well as my experiences to date, I will offer a unique perspective to a variety of problems.
-
-    If you find that I may be a suitable for a position, I am more than happy to discuss my works in person, or via Skype. Please do not hesitate to get in touch for further information.
+    If you find that I may be a suitable for this position, I am more than happy to discuss my applicability in person, or via Skype. Please do not hesitate to get in touch for further information.
+    \vspace{-0.15cm}
 }
 
 \makeletterclosing

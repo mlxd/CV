@@ -1,0 +1,42 @@
+\documentclass[11pt,a4paper,unicode]{moderncv}
+\moderncvtheme[grey]{classic}                % oldstyle banking casual classic
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}
+
+%\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+\firstname{Lee James}
+\familyname{O'Riordan}
+\title{Dr.}
+\address{Lawrence Berkeley National Labs}{1 Cyclotron Road Mailstop 33R0345}{Berkeley, CA 94709, United States}
+\mobile{+1 (510) 900 3870}
+\email{loriordan@lbl.gov}
+\social[linkedin]{loriordan}
+\social[github]{mlxd}
+
+\makeatletter
+
+\begin{document}
+    \recipient{Perimeter Institute}{}
+    \date{\today} % Letter date
+    \opening{Dear Perimeter Hiring Team,}
+    \closing{Sincerely,}
+    \makelettertitle
+{
+    \vspace{-0.5cm}
+    I am writing to express interest in the computational scientist position advertised at Perimeter Institute. I have completed my PhD in 2017, where I have resreached the dynamics of perturbed quantum fluids, and have since taken a postdoctoral role allowing me to explore developing exascale computational software methods. I am interested in solving problems of exotic quantum systems and dynamics using cutting-edge computational techniques. I have gained much experience writing HPC software for GPUs, clusters, and many-core architecture devices, and I am interested in applying what I know to other codes to offer all available performance gains.
+
+    My most recent published works have been working with the dynamics of quantised vorticity in Bose--Einstein condensates. I have found this system to be quite interesting as it offers analogues to solid-state systems, and is great for exploring nonlinear quantum dynamics. More recently I have been working on further developing my computational and data analysis skills, where I have taken a role at Berkeley Labs (LBNL) examining X-ray crystallography data from the LCLS (Linear coherent light source) at SLAC, Stanford, and preparing the group softwares for the accelerator upgrade to LCLS2. We recently demonstrated a successful proof-of-concept of the project advances, where the team and I utilised the power of NERSC's Cori supercomputer for the processing and analysis of several hundred thousand images. In about thirty minutes all of the available images were analysed, characterised, and merged to create an electron density map of the data. For this work we have ported CCTBX (Computational Crystallography Toolbox), the de-facto standard for use in this field, to Intel's Knights Landing (Xeon Phi) architecture. Moving forward this work will require optimisation and streamlining of the processing stages of the software pipeline.
+
+    For my next role I am looking for taking my computational experience to date and applying it to the a variety of other problems. I feel that with my background in quantum gases and atom optics I will capably be able to interact with many of the theorists discussed in the posting, and can offer many insights to the most effective means to accelerate application performance. 
+
+    %During my time in the graduate programme at OIST, and my software engineering experience prior to starting my research career, I have also gained a variety of experience in many areas outside my specialisation, such as cryo-electron microscopy, protein crystallization, 3D molecular reconstruction, fluid mechanics, and optics. With these I may offer a unique perspective to a variety of problems.
+
+    As some evidence to my computational background, I have published several works that were successful due to the use GPU of computing methods for the simulation of both linear and nonlinear quantum dynamics [\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys.~Rev.~A~88, 053618 (2013)}, \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys.~Rev.~A~93, 023609 (2016)}, \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603}{Phys.~Rev.~A~94, 053603 (2016)}]. The software for the above works was realised as an open-souced application [\href{https://github.com/gpue-group/gpue}{GitHub:gpue-group/gpue}], and has been independently performance tested to show itself as the fastest of its kind [\href{http://peterwittek.com/gpe-comparison.html}{http://peterwittek.com/gpe-comparison.html}]. All current work at Berkeley Labs will appear in conference proceedings and publications in time.
+
+    If you find that I may be a suitable for this position, I am more than happy to discuss my applicability in person, or via Skype. Please do not hesitate to get in touch for further information.
+    \vspace{-0.15cm}
+}
+
+\makeletterclosing
+\end{document}
