@@ -1,5 +1,12 @@
-\documentclass[11pt,a4paper,unicode]{moderncv}
+\documentclass[12pt,a4paper,unicode]{moderncv}
 \moderncvtheme[grey]{classic}                % oldstyle banking casual classic
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\makeatletter
+\patchcmd{\makeletterhead}% <cmd>
+  {\raggedright \@opening}% <search>
+  {\@opening}% <replace>
+  {}{}% <success><failure>
+\makeatother
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.8]{geometry}
 \setlength{\hintscolumnwidth}{2.5cm}
@@ -17,15 +24,15 @@
 \makeatletter
 
 \begin{document}
-    \recipient{Prof. Jonas Larson}{}
+    \recipient{Dr. Jonas Larson}{Department of Physics, Stockholm}
     \date{\today} % Letter date
-    \opening{Prof. Larson}
+    \opening{Dear Dr. Larson}
     \closing{Sincerely,}
     \makelettertitle
 {
     \vspace{-0.5cm}
 
-
+\iffalse
     Cover letter
     CV – degrees and other completed courses, work experience and a list of publications
     Research proposal (no more than 3 pages) describing:
@@ -34,20 +41,15 @@
     – what makes you suitable for the project in question
     Copy of PhD diploma
     Publications in support of your application (no more than 3 files).
+\fi
 
+In this letter I will present a summary and statement of my research to date, as well as my future plans. My PhD was undertaken at the Okinawa Institute of Science and Technology Graduate University, Japan, and also briefly at University College Cork, Ireland, under the supervision of Prof. Thomas Busch. My area of research is in theoretical cold atomic physics, concentrating largely on the dynamics of Bose--Einstein condensates. During my PhD I have studied the dynamics and behaviour of trapped quantum systems. My work aims to understand the dynamics of perturbations on quantum states with large values of angular momentum. I have worked primarily on understanding the dynamics of superfluids and quantum vortices. For these studies I have gained expertise in computational techniques that I know will be beneficial for a variety of problems.
 
-    I am writing to express interest in the computational scientist position advertised at Perimeter Institute. I have completed my PhD in 2017, where I have resreached the dynamics of perturbed quantum fluids, and have since taken a postdoctoral role allowing me to explore developing exascale computational software methods. I am interested in solving problems of exotic quantum systems and dynamics using cutting-edge computational techniques. I have gained much experience writing HPC software for GPUs, clusters, and many-core architecture devices, and I am interested in applying what I know to other codes to offer all available performance gains.
+My thesis work concentrates on applying two types of perturbations to the equilibrium state of the rapidly rotating condensate system: i) the modification of the phonon spectrum of the condensate through the use of a kicked optical potential, without modification of the angular momentum; ii) the direct control of the topological excitations (vortices), and hence the angular momentum, which is performed with direct phase engineering of the wavefunction. Both methods are realisable using currently available state-of-the-art experimental control techniques. Using these techniques I have studied the creation of moir\'e superlattice patterns and the robustness of the vortex lattice system~[\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys. Rev. A 93, 023609 (2016)}], and have investigated order-to-disorder transitions and the creation of topological lattice defects~[\href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603}{Phys. Rev. A 94, 053603 (2016)}].
 
-    My most recent published works have been working with the dynamics of quantised vorticity in Bose--Einstein condensates. I have found this system to be quite interesting as it offers analogues to solid-state systems, and is great for exploring nonlinear quantum dynamics. More recently I have been working on further developing my computational and data analysis skills, where I have taken a role at Berkeley Labs (LBNL) examining X-ray crystallography data from the LCLS (Linear coherent light source) at SLAC, Stanford, and preparing the group softwares for the accelerator upgrade to LCLS2. We recently demonstrated a successful proof-of-concept of the project advances, where the team and I utilised the power of NERSC's Cori supercomputer for the processing and analysis of several hundred thousand images. In about thirty minutes all of the available images were analysed, characterised, and merged to create an electron density map of the data. For this work we have ported CCTBX (Computational Crystallography Toolbox), the de-facto standard for use in this field, to Intel's Knights Landing (Xeon Phi) architecture. Moving forward this work will require optimisation and streamlining of the processing stages of the software pipeline.
+The use of a direct phase engineering approach showed itself to be a good candidate for investigating order-to-disorder transitions in a vortex lattice system. In a recent work I demonstrated the creation of stable topological defects in the vortex lattice which persisted for long times through the creation of vacancies in the vortex lattice. I classify the lattice disorder using orientational correlation functions, and also by the presence of vortices with non sixfold nearest neighbours using Delaunay triangulations. While not yet investigated, I intend to examine whether a hexatic phase can be created in the vortex lattice system using this approach.
 
-    For my next role I am looking for taking my computational experience to date and applying it to the a variety of other problems. I feel that with my background in quantum gases and atom optics I will capably be able to interact with many of the theorists discussed in the posting, and can offer many insights to the most effective means to accelerate application performance. 
-
-    %During my time in the graduate programme at OIST, and my software engineering experience prior to starting my research career, I have also gained a variety of experience in many areas outside my specialisation, such as cryo-electron microscopy, protein crystallization, 3D molecular reconstruction, fluid mechanics, and optics. With these I may offer a unique perspective to a variety of problems.
-
-    As some evidence to my computational background, I have published several works that were successful due to the use GPU of computing methods for the simulation of both linear and nonlinear quantum dynamics [\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys.~Rev.~A~88, 053618 (2013)}, \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys.~Rev.~A~93, 023609 (2016)}, \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603}{Phys.~Rev.~A~94, 053603 (2016)}]. The software for the above works was realised as an open-souced application [\href{https://github.com/gpue-group/gpue}{GitHub:gpue-group/gpue}], and has been independently performance tested to show itself as the fastest of its kind [\href{http://peterwittek.com/gpe-comparison.html}{http://peterwittek.com/gpe-comparison.html}]. All current work at Berkeley Labs will appear in conference proceedings and publications in time.
-
-    If you find that I may be a suitable for this position, I am more than happy to discuss my applicability in person, or via Skype. Please do not hesitate to get in touch for further information.
-    \vspace{-0.15cm}
+Over the course of my PhD I have also developed very capable numerical solvers for both linear and nonlinear Schr\"odinger systems using graphics processing units (GPUs) as computational accelerators. Using a variants of these codes, I have demonstrated 3D numerical integration of the Schr\"odinger equation for an experimentally realistic systems to investigate spatial adiabatic passage (SAP)~[\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys.~Rev.~A~88, 053618 (2013)}]. By preparing the system in a specific ground-state, known as the dark state, and controlling the couplings between the waveguides we aimed to show that this system could be used to demonstrate the coherent population transfer of a matter-wave from a left trap to a right trap without ever populating the middle. For this, a fully three-dimensional simulation of the Schr\"odinger equation was necessary to fully capture all possible dispersion and excitations that may occur during the evolution. We were able to show that not only is the SAP process capably modeled using the designed system, but also that our process had a transfer fidelity of approximately 99.8\%. The computational tools we used to simulate this system, which required a huge amount of processing time and parameter optimisation to reach this fidelity, allowed us to examine equally computationally challenging systems. These numerical tools were then used to study the rapidly rotating Bose--Einstein condensate systems in and near the mean-field quantum Hall regime. I have released the source for this work under an open license, titled ``GPUE''~[\href{https://github.com/gpue-group/gpue}{GitHub:gpue-group/gpue}], which was used in my works on vortex lattices. The resulting software methods have been independently performance tested, and have been shown to outperform well-established and mature software packages in C/C++ and \textsc{MATLAB}~[http://peterwittek.com/gpe-comparison.html]. Further work in collaboration with several interns and a PhD student at OIST sees this code continue to grow, and now can be used to examine three dimensional condensate dyanmics inclusing direct phase control, vortex tracking, and dynamical gauge fields for condensate control.
 }
 
 \makeletterclosing
