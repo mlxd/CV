@@ -1,0 +1,16 @@
+Publications
+2018 “Improving signal strength in serial crystallography with DIALS geometry refinement”,
+A. S. Brewster, D. G. Waterman, J. M. Parkhurst, R. J. Gildea, I. D. Young, L. J. O’Riordan,
+J. Yano, G. Winter, G. Evans, N. K. Sauter. Accepted for publication in Acta Crystallo-
+graphica Section D.
+
+2016 “Topological defect dynamics of vortex lattices in Bose–Einstein condensates”,
+L. J. O’Riordan, Th. Busch. Phys. Rev. A 94, 053603 (2016). DOI: 10.1103/Phys-
+RevA.94.053603
+
+2016 “Moiré superlattice structures in kicked Bose-Einstein condensates”, L. J. O’Riordan,
+A. C. White, Th. Busch. Phys. Rev. A 93, 023609 (2016). DOI: 10.1103/Phys-
+RevA.93.023609
+
+2013 “Coherent transport by adiabatic passage on atom chips”, T. Morgan, L. J. O’Riordan,
+N. Crowley, Th. Busch, Phys. Rev. A 88, 053618 (2013). DOI: 10.1103/PhysRevA.88.053618
