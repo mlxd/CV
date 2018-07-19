@@ -1,16 +1,16 @@
-\documentclass[11pt,a4paper,unicode]{moderncv}
+\documentclass[11pt,letter,unicode]{moderncv}
 \moderncvtheme[grey]{classic}                % oldstyle banking casual classic
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.86]{geometry}
 \setlength{\hintscolumnwidth}{2.5cm}
 
 %\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 \firstname{Lee James}
 \familyname{O'Riordan}
 \title{Dr.}
-\address{Lawrence Berkeley National Labs}{1 Cyclotron Road Mailstop 33R0345}{Berkeley, CA 94709, United States}
-\mobile{+1 (510) 900 3870}
-\email{loriordan@lbl.gov}
+%\address{}{}{}
+%\mobile{+1 (510) 900 3870}
+\email{loriordan@gmail.gov}
 \social[linkedin]{loriordan}
 \social[github]{mlxd}
 
@@ -19,22 +19,25 @@
 \begin{document}
     \recipient{}{}
     \date{\today} % Letter date
-    \opening{Dear 1QBit Team,}
+    \opening{Dear Zapata Computing Team,}
     \closing{Sincerely,}
     \makelettertitle
 {
     \vspace{-0.5cm}
-    I am writing to express interest in a research position within your team. I have completed my PhD earlier this year, and have since taken a postdoctoral role allowing me to explore current trends in developing exascale computational software methods. I am very interested in working within the quantum technology realm for my career, as I know this will soon become the paradigm for new technologies in coming years.
+    I am writing to express interest in the Quantum Applications Scientist position within your team. I have completed my PhD in 2017, and have since taken a postdoctoral role allowing me to explore current trends in developing exascale computational software methods. I am very interested in working within the quantum applications realm for my career, as I have developed significant interest in working with these newly emerging technologies and approaches to problem solving.
 
-    My most recent published works have been working with the dynamics of quantised vorticity in Bose--Einstein condensates. I have found this system to be quite interesting as it offers analogues to solid-state systems, and is great for exploring nonlinear quantum dynamics. More recently I have been working on further developing my computational and data analysis experience, where I have taken a role at Berkeley Labs (LBNL) examining X-ray crystallography data from the LCLS (Linear coherent light source) at SLAC, Stanford, and preparing these softwares for the accelerator upgrade to LCLS2. For this project to succeed the team and I will require processing of over of a million images in realtime, where NERSC's supercomputer Cori will be used for this processing. To date we have successfully ported CCTBX (Computational Crystallography Toolbox), the de-facto standard for use in this field, to Intel's Knights Landing (Xeon Phi) architecture. Moving forward will require optimisation and streamlining of the processing stages of the software pipeline.
+During my PhD I worked on simulations of cold atomic physical systems through numerical solution of the non-linear Schr\"odinger equation to study the dynamics of Bose--Einstein condensates (BEC). I have found this system to be quite interesting as it offers analogues to solid-state systems, and is great for exploring nonlinear quantum dynamics. My most recent published works have been working with the dynamics of quantised vorticity in these BEC systems. To simulate these systems I developed a CUDA-enabled codebase, which I have open-sourced and placed at https://github.com/gpue-group/gpue . While not all of the work developed on this project is currently open due to continuing research in the area, many of the CUDA kernels, C/C++ code and Python modules are all available, as well as some MATLAB scripts to augment the work. The code was independently tested against other existing packages in the field, and GPUE was found to be the fastest at the at the time of examination (see https://peterwittek.com/gpe-comparison.html for further details). My published works using this GPU code are [Phys. Rev. A 88, 053618 (2013), Phys. Rev. A 93, 023609 (2016), Phys. Rev. A 94, 053603 (2016)], and I expect additional papers to be published in the coming months.
 
-    For my next role I am looking for taking my experience with quantum systems and computational research to date and applying it to the R\&D of quantum technologies. While I do not have a formal background in quantum information, this is an area I am very keen to gain experience in, and I am to gain exposure to this area until a viable position becomes available. I feel that with my background in quantum gases and atom optics I will be capable of picking up the knowledge to work effectively in this field. Similarly, the application of machine learning theory rooted in quantum mechanics is an area I am also heavily interested in, and I am also keen to learn as much as possible about this field. With the development of quantum technologies, these quantum machine learning techniques will become applicable to solving real-world issues.
+Upon completion of my PhD I accepted a role at Lawrence Berkeley National Lab (LBNL) examining X-ray crystallography data from the LCLS (Linear coherent light source) at SLAC, Stanford. The goal of this project was to enable the processing of many millions of images in realtime, where NERSC’s supercomputer Cori will be used for this processing. The routines also require preparation for the accelerator upgrade to LCLS2 which is expected to generate data at rates several orders of magntiude larger. To date we have successfully ported CCTBX (Computational Crystallography Toolbox), the de-facto standard for use in this field, to NERSC's Cori supercomputer, verified that we process data as it is collected at the detector, and obtain results in a shoter time than previously. We also capably showed that several components of the data analysis problem can scale well with the addition of nodes, and identified others which require further development to improve scalability. Moving forward will require optimisation and streamlining of the processing stages of the software pipeline to allow for higher data rates, as well as optimisation of routines to fully utilise the Intel Knights Landing hardware. While I am no longer directly on this project, I remain an affiliate of LBNL to assist in the short-term with the work, and remain a developer on the open-sourced modules in the project. Technologies used on this project were MPI, OpenMP, C/C++ with Python bindings written in Boost.Python, as well as the Shifter container format developed at NERSC (based on Docker).
+
+    For my next role I am looking for taking my experience with quantum systems and computational research to date and applying it to the R\&D of quantum technologies. I feel that with my background in quantum gases and atom optics I will be capable of picking up the knowledge to work effectively in this field. I am also interested in modern approaches to computation, and have programming experience in a variety of languages.
+
+I am quite happy to discuss in depth my background and applicability for this position, should you so wish. Thank you in advance, and I look forward to your response.
 
     %During my time in the graduate programme at OIST, and my software engineering experience prior to starting my research career, I have also gained a variety of experience in many areas outside my specialisation, such as cryo-electron microscopy, protein crystallization, 3D molecular reconstruction, fluid mechanics, and optics. With these I may offer a unique perspective to a variety of problems.
 
-    As some evidence to my computational background, I have published several works using GPU computing methods for the simulation of both linear and nonlinear quantum dynamics [\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys.~Rev.~A~88, 053618 (2013)}, \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys.~Rev.~A~93, 023609 (2016)}, \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603}{Phys.~Rev.~A~94, 053603 (2016)}]. The software for the above works was realised as an open-souced application [\href{https://github.com/gpue-group/gpue}{GitHub:gpue-group/gpue}], and has been independently performance tested to show itself as the fastest of its kind [\href{http://peterwittek.com/gpe-comparison.html}{Wittek:blog}]. All current work at Berkeley Labs will appear in conference proceedings and publications in time.
+    %As some evidence to my computational background, I have published several works using GPU computing methods for the simulation of both linear and nonlinear quantum dynamics [\href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys.~Rev.~A~88, 053618 (2013)}, \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys.~Rev.~A~93, 023609 (2016)}, \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603}{Phys.~Rev.~A~94, 053603 (2016)}]. The software for the above works was realised as an open-souced application [\href{https://github.com/gpue-group/gpue}{GitHub:gpue-group/gpue}], and has been independently performance tested to show itself as the fastest of its kind [\href{http://peterwittek.com/gpe-comparison.html}{Wittek:blog}]. All current work at Berkeley Labs will appear in conference proceedings and publications in time.
 
-    If you find that I may be a suitable for a position, I am more than happy to discuss my applicability in person, or via Skype. Please do not hesitate to get in touch for further information.
     \vspace{-0.15cm}
 }
 
