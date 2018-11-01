@@ -3,6 +3,12 @@
 \moderncvtheme[grey]{classic}
 %\moderncvtheme[green]{classic}%idem
 
+%\usepackage{fontspec}
+%\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+%\setmainfont{Lusitana-Regular}
+%\setmainfont{Palatino}
+%\setmonofont{FiraCode-Medium}
+
 \usepackage[utf8]{inputenc}
 
 \usepackage[scale=0.89]{geometry}
@@ -16,7 +22,7 @@
 
 \firstname{Lee James}
 \familyname{O'Riordan}
-\title{PhD}               % optional, remove the line if not wanted
+\title{BSc (Hons), PhD}               % optional, remove the line if not wanted
 %\address{Quantum Systems Unit, Okinawa Institute of Science and Technology Graduate University}{1919-1 Tancha, Onna-son, Okinawa, Japan 904-0495}   % optional, remove the line if not wanted
 \mobile{+353 (0)85 7869457}
 %\phone{+81 (0)98 966 1588}
@@ -27,6 +33,12 @@
 
 \makeatletter
 \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\renewcommand{\rmdefault}{ptm}
+\renewcommand{\rmdefault}{ppl} %***
+%\renewcommand{\rmdefault}{pnc} %**
+%\renewcommand{\rmdefault}{pbk}
+%\renewcommand{\rmdefault}{pzc}
+\renewcommand{\rmdefault}{put}
 \makeatother
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -44,7 +56,7 @@ experience with Haskell, as well as the various quantum software toolkits that h
 \section{Education}
 \cventry{2012--2017}{PhD in Science (Physics)}{Quantum Systems Unit, Okinawa Institute of Science and Technology Graduate University}{Japan}{}{Thesis: \emph{``Non-equilibrium vortex dynamics in rapidly rotating Bose--Einstein condensates''}}
 %\cventry{2011--2012}{PhD in Physics}{Ultracold quantum gases group, University College Cork}{Ireland}{}{Transferred to Okinawa Institute of Science and Technology Graduate University, Japan after completing 1st academic year.}
-\cventry{2006--2010}{BSc (Hons) in Physics with Computing}{Waterford Institute of Technology}{Ireland}{Graduated with first class honours (1.1)}{}%{Thesis: \emph{``Evaluating magnetic susceptibility in Heisenberg chains using OpenCL implementations of Monte Carlo methods.''}} %{Thesis: \emph{``Evaluating magnetic susceptibility in Heisenberg chains using OpenCL implementations of Monte Carlo methods''}.}
+\cventry{2006--2010}{BSc (Hons) in Physics with Computing}{Waterford Institute of Technology}{Ireland}{}{Graudated with first class honours (1.1).}%{Thesis: \emph{``Evaluating magnetic susceptibility in Heisenberg chains using OpenCL implementations of Monte Carlo methods.''}} %{Thesis: \emph{``Evaluating magnetic susceptibility in Heisenberg chains using OpenCL implementations of Monte Carlo methods''}.}
 %\cventry{2000--2005}{Leaving Certificate}{Ardscoil na mBraithre Clonmel}{Ireland}{}{}
 %\cventry{2008}{Computer repair technician}{Computer Centre}{Clonmel, Ireland}{}{Routine analysis and repair of computer hardware \& software issues.}
 %\cventry{2006--2008}{Session musician \& instructor}{\textit{Teaching \& performing}}{Various locations}{Ireland}{Guitarist \& music instructor.}
@@ -81,27 +93,58 @@ Developed software for die yield analysis and characterisation.\newline{}
 %\pagebreak
 \section{Publications}
 %\cvline{2018}{\textit{``GPUE: Graphics Processing Unit Gross-Pitaevskii Equation solver''}{ J.~R.~Schloss, L.~J.~O'Riordan } {Journal of Open Source Software, 2018}. }
-\cvline{2018}{\textit{``Improving signal strength in serial crystallography with DIALS geometry refinement'', }{A.~S.~Brewster, D.~G.~Waterman, J.~M.~Parkhurst, R.~J.~Gildea, I.~D.~Young, L.~J.~O'Riordan, J.~Yano, G.~Winter, G.~Evans, N.~K.~Sauter.} {Acta Cryst. (2018). D74, 877-894}. }
+
+
 %\cvline{2017}{\textit{``Controlling vortex rings in Bose-Einstein condensates using artificial gauge fields'', }{J.~Schloss, R.~Sachdeva, L.~J.~O'Riordan, Th.~Busch.} \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603}{Phys. Rev. A 94, 053603 (2016)}. DOI: {10.1103/PhysRevA.94.053603}}
-\cvline{2017}{\textit{``Non-equilibrium vortex dynamics in rapidly rotating Bose-Einstein condensates'', }{L.~J.~O'Riordan, } \href{https://ci.nii.ac.jp/naid/500001054902/}{Okinawa Insitute of Science and Technology Graduate University}. DOI: {10.15102/1394.00000165}}
-\cvline{2016}{\textit{``Topological defect dynamics of vortex lattices in Bose--Einstein condensates'', }{L.~J.~O'Riordan, Th.~Busch.} \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603}{Phys. Rev. A 94, 053603 (2016)}. DOI: {10.1103/PhysRevA.94.053603}}
-\cvline{2016}{\textit{``Moir\'e superlattice structures in kicked Bose-Einstein condensates'', }{L.~J.~O'Riordan, A.~C.~White, Th.~Busch.} \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys. Rev. A 93, 023609 (2016)}. DOI: {10.1103/PhysRevA.93.023609}}
-\cvline{2013}{\textit{``Coherent transport by adiabatic passage on atom chips'', }{T.~Morgan, L.~J.~O'Riordan, N.~Crowley, Th.~Busch,} \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys. Rev. A 88, 053618 (2013)}. DOI: {10.1103/PhysRevA.88.053618}}
+
+\cvline{2018}{
+    \textbf{{Improving signal strength in serial crystallography with DIALS geometry refinement}},
+    {A.~S.~Brewster, D.~G.~Waterman, J.~M.~Parkhurst, R.~J.~Gildea, I.~D.~Young, L.~J.~O'Riordan, J.~Yano, G.~Winter, G.~Evans, N.~K.~Sauter},
+    {Acta Cryst. D., \textbf{74}, 877-894}. DOI: {\href{https://doi.org/10.1107/S2059798318009191}{10.1107/S2059798318009191} }
+}
+
+\cvline{2017}{
+    \textbf{{Non-equilibrium vortex dynamics in rapidly rotating Bose-Einstein condensates}},
+    {L.~J.~O'Riordan, } 
+    \href{https://ci.nii.ac.jp/naid/500001054902/}{Okinawa Insitute of Science and Technology Graduate University}. 
+    DOI: { \href{https://doi.org/10.15102/1394.00000165}{10.15102/1394.00000165}} 
+}
+
+\cvline{2016}{
+    \textbf{{Topological defect dynamics of vortex lattices in Bose--Einstein condensates}},
+    {L.~J.~O'Riordan, Th.~Busch.} 
+    \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.053603}{Phys. Rev. A 94, 053603}. 
+    DOI: { \href{https://doi.org/10.1103/PhysRevA.94.053603}{10.1103/PhysRevA.94.053603} } 
+}
+
+\cvline{2016}{
+    \textbf{{Moir\'e superlattice structures in kicked Bose-Einstein condensates}},
+    {L.~J.~O'Riordan, A.~C.~White, Th.~Busch.} 
+    \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023609}{Phys. Rev. A 93, 023609}. 
+    DOI: { \href{https://doi.org/10.1103/PhysRevA.93.023609}{10.1103/PhysRevA.93.023609}} 
+}
+
+\cvline{2013}{
+    \textbf{{Coherent transport by adiabatic passage on atom chips}},
+    {T.~Morgan, L.~J.~O'Riordan, N.~Crowley, Th.~Busch.} 
+   \href{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.053618}{Phys. Rev. A 88, 053618}.
+    DOI: { \href{https://doi.org/10.1103/PhysRevA.88.053618}{10.1103/PhysRevA.88.053618}} 
+}
 
 \section{Presentations}
-\cventry{Mar, 2018}{DIALS Workshop 2018} {Talk}{Lawrence Berkeley National Lab}{USA}{Title: ``\textit{Data analysis and development using Jupyter}"}
-\cventry{Apr, 2017}{Waterford Institute of Technology} {Seminar}{Waterford}{Ireland}{Title: ``\textit{Ultracold atomic gases}"}
-\cventry{Mar, 2016}{WQS 2016} {Conference}{Dunedin}{New Zealand}{Poster presentation: ``\textit{Dynamics of large vortex lattice carrying Bose--Einstein condensates}"}
-\cventry{June, 2015}{ICOLS 2015} {Conference}{Sentosa}{Singapore}{Poster presentation: ``\textit{Moiré super-lattice in a kicked rapidly rotating Bose–Einstein condensate}"}
-\cventry{Sept, 2014}{Coherent Quantum Dynamics} {Workshop}{Okinawa Institute of Science and Technology Graduate University}{Japan}{Poster presentation: ``\textit{Investigating vortex dynamics in harmonically trapped Bose-Einstein condensates}"}
-\cventry{July, 2014}{Non-linear Dynamics, Dynamical Transitions and Instabilities in Classical and Quantum Systems}{Workshop}{ICTP}{Italy}{Poster presentation: ``\textit{Investigating vortex dynamics in harmonically trapped Bose-Einstein condensates}"}
-\cventry{April, 2014}{C3QS 2014}{Conference}{Okinawa Institute of Science and Technology Graduate University}{Japan}{Poster presentation: ``\textit{Coherent transport by adiabatic passage on atom chips}"}
-\cventry{Sept, 2013}{Manipulation of degenerate quantum gases}{Workshop}{\'{E}cole Pr\'{e}doctorale de Physique des Houches}{France}{Poster presentation: ``\textit{Coherent transport by adiabatic passage on atom chips}"}
-\cventry{May, 2013}{C3QS 2013}{Conference}{Okinawa Institute of Science and Technology Graduate University}{Japan}{Poster presentation:  ``\textit{Simulating 3D atomic dynamics using a graphics processor accelerated split-operator method}"}
+\cventry{Mar, 2018}{DIALS Workshop 2018} {Talk}{Lawrence Berkeley National Lab}{USA}{Title: ``\emph{Data analysis and development using Jupyter}"}
+\cventry{Apr, 2017}{Waterford Institute of Technology} {Seminar}{Waterford}{Ireland}{Title: ``\emph{Ultracold atomic gases}"}
+\cventry{Mar, 2016}{WQS 2016} {Conference}{Dunedin}{New Zealand}{Poster presentation: ``\emph{Dynamics of large vortex lattice carrying Bose--Einstein condensates}"}
+\cventry{June, 2015}{ICOLS 2015} {Conference}{Sentosa}{Singapore}{Poster presentation: ``\emph{Moiré super-lattice in a kicked rapidly rotating Bose–Einstein condensate}"}
+\cventry{Sept, 2014}{Coherent Quantum Dynamics} {Workshop}{Okinawa Institute of Science and Technology Graduate University}{Japan}{Poster presentation: ``\emph{Investigating vortex dynamics in harmonically trapped Bose-Einstein condensates}"}
+\cventry{July, 2014}{Non-linear Dynamics, Dynamical Transitions and Instabilities in Classical and Quantum Systems}{Workshop}{ICTP}{Italy}{Poster presentation: ``\emph{Investigating vortex dynamics in harmonically trapped Bose-Einstein condensates}"}
+\cventry{April, 2014}{C3QS 2014}{Conference}{Okinawa Institute of Science and Technology Graduate University}{Japan}{Poster presentation: ``\emph{Coherent transport by adiabatic passage on atom chips}"}
+\cventry{Sept, 2013}{Manipulation of degenerate quantum gases}{Workshop}{\'{E}cole Pr\'{e}doctorale de Physique des Houches}{France}{Poster presentation: ``\emph{Coherent transport by adiabatic passage on atom chips}"}
+\cventry{May, 2013}{C3QS 2013}{Conference}{Okinawa Institute of Science and Technology Graduate University}{Japan}{Poster presentation:  ``\emph{Simulating 3D atomic dynamics using a graphics processor accelerated split-operator method}"}
 %\cventry{Sept, 2012}{QuAMP 2012}{Workshop}{Queens University Belfast}{Northern Ireland}{Attendee}
-\cventry{Jul, 2012}{QUACS 2012}{Workshop}{University of Nottingham}{UK}{Poster presentation: ``\textit{Simulations of 3D atomic dynamics using a GPU accelerated split-operator method}"}
-\cventry{Mar, 2012}{Institute of Physics Ireland Spring Meeting 2012}{Workshop}{Royal College of Surgeons}{Ireland}{Poster presentation: ``\textit{Simulations of 3D atomic dynamics using a GPU accelerated split-operator method}"}
-\cventry{Mar, 2012}{DPG Spring Meeting}{University of Stuttgart}{Germany}{Conference}{Oral presentation: ``\textit{Simulations of 3D atomic dynamics using a GPU accelerated split-operator method}"}
+\cventry{Jul, 2012}{QUACS 2012}{Workshop}{University of Nottingham}{UK}{Poster presentation: ``\emph{Simulations of 3D atomic dynamics using a GPU accelerated split-operator method}"}
+\cventry{Mar, 2012}{Institute of Physics Ireland Spring Meeting 2012}{Workshop}{Royal College of Surgeons}{Ireland}{Poster presentation: ``\emph{Simulations of 3D atomic dynamics using a GPU accelerated split-operator method}"}
+\cventry{Mar, 2012}{DPG Spring Meeting}{University of Stuttgart}{Germany}{Conference}{Oral presentation: ``\emph{Simulations of 3D atomic dynamics using a GPU accelerated split-operator method}"}
 
 %\section{Graduate courses}
 %\cventry{2014}{Coherent Quantum Dynamics}{Multiple lecturers}{Okinawa Institute of Science and Technology Graduate University}{Japan}{}
